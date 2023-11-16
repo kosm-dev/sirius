@@ -1,0 +1,41 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-image: url("../images/header-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: auto;
+    padding-right: 15px;
+  }
+
+  &__try-our {
+    display: none;
+  }
+  &__signup {
+    margin-left: 136px;
+  }
+}
+
+.logo img {
+  width: 100%;
+  max-width: 124px;
+  object-fit: cover;
+}
+.menu {
+  &__list {
+    display: flex;
+    gap: 0 136px;
+  }
+
+  &__list-link {
+    color: #1e1e1e;
+    @extend %gilroy-700;
+    font-size: 16px;
+  }
+}

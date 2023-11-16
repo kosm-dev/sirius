@@ -1,12 +1,26 @@
-// breakpoints
-$xxl: 1400px;
-$xl: 1200px;
-$lg: 992px;
-$md: 768px;
-$sm: 576px;
-$xs: 374px;
 
-%roboto-400 {
-  font-family: "Roboto", sans-serif;
+// fonts
+%gilroy-400 {
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
+}
+
+%gilroy-500 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+}
+
+%gilroy-600 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+}
+
+%gilroy-700 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+}
+
+%gilroy-900 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
 }

@@ -3,7 +3,14 @@ body {
   height: 100%;
 }
 
-body {}
+body {
+  @extend %gilroy-500;
+  color: #fff;
+  font-size: 16px;
+  background-color: #181618;
+  min-width: 320px;
+  overflow-x: hidden;
+}
 
 .lock {
   overflow: hidden;
@@ -32,7 +39,7 @@ body {}
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1780px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -92,4 +99,31 @@ body {}
 
 .burger--active span {
   transform: scale(0);
+}
+
+.try-our {
+  display: flex;
+  align-items: center;
+  &__text {
+    margin-right: 14px;
+    @extend %gilroy-600;
+    color: #1e1e1e;
+    font-size: 16px;
+  }
+  &__img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.signup {
+  display: inline-block;
+  min-height: 56px;
+  min-width: 180px;
+  @extend %gilroy-700;
+  color: #fff;
+  font-size: 16px;
+  padding: 18px 62px;
+  background-color: #242424;
+  border-radius: 45px;
+  text-align: center;
 }
