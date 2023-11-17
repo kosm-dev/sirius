@@ -1,0 +1,68 @@
+.footer {
+  padding-top: 31px;
+  padding-bottom: 41px;
+  background: #0a0a0a;
+  &__inner {
+    display: flex;
+    gap: 35px 110px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__item--special {
+    align-items: flex-start;
+  }
+  &__item-icon {
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #272727;
+    padding: 19px 17px;
+  }
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item-link {
+    @extend %gilroy-600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+  }
+  &__item-title {
+    @extend %gilroy-600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+  }
+  &__item-url {
+    color: #a9f9c4;
+  }
+  &__menu {
+    margin-top: 19px;
+  }
+  &__menu-title {
+    margin-bottom: 14px;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  &__menu-link {
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #656565;
+  }
+}

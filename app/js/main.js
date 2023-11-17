@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
         header.classList.add('header-special');
         header.classList.remove('fade-in');
       }
-
     };
 
-    
+
 
   }
 
