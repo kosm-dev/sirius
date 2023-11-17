@@ -1,7 +1,8 @@
 .header {
+  position: fixed;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-
   background-image: url("../images/header-bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,4 +39,24 @@
     @extend %gilroy-700;
     font-size: 16px;
   }
+}
+
+.header-special.header {
+  background: transparent;
+}
+.header-special.header .header__menu {
+  display: none;
+}
+
+.header-special.header .header__signup {
+  margin-left: 54px;
+}
+
+.header-special.header .header__try-our {
+  display: flex;
+  margin-left: 54px;
+}
+
+.header-special.header .header__logo {
+  align-self: flex-end;
 }

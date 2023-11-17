@@ -127,3 +127,27 @@ body {
   border-radius: 45px;
   text-align: center;
 }
+
+.tag {
+  padding: 2px 13px;
+  color: #8f8f8f;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #2f2f2f;
+}
+
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
