@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-
   const swiper = new Swiper('.faq-slider', {
     loop: true,
     slidesPerView: 'auto',
