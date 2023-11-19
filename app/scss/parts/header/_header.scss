@@ -46,7 +46,8 @@
   background: transparent;
 }
 .header-special.header .header__menu {
-  display: none;
+  transform: scale(0);
+  transition: all 0.2s;
 }
 
 .header-special.header .header__signup {
@@ -60,13 +61,14 @@
 
 .header-special.header .header__logo {
   align-self: flex-end;
+  transition: all 2s;
 }
 
 .header-special.header--scroll {
   background-image: url("../images/header-bg.svg");
 }
 .header-special.header--scroll .header__menu {
-  display: block;
+  transform: scale(1);
 }
 
 .header-special.header--scroll .header__logo {
