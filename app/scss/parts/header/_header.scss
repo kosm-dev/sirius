@@ -61,3 +61,22 @@
 .header-special.header .header__logo {
   align-self: flex-end;
 }
+
+.header-special.header--scroll {
+  background-image: url("../images/header-bg.svg");
+}
+.header-special.header--scroll .header__menu {
+  display: block;
+}
+
+.header-special.header--scroll .header__logo {
+  align-self: center;
+}
+
+.header-special.header--scroll .header__try-our {
+  display: none;
+}
+
+.header-special.header--scroll .header__signup {
+  margin-left: 136px;
+}

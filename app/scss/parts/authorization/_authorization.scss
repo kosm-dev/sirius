@@ -1,0 +1,123 @@
+.authorization {
+  padding-top: 194px;
+  padding-bottom: 195px;
+  &__logo {
+    margin-bottom: 87px;
+  }
+}
+
+.form-auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 49px 57px 71px;
+  width: 100%;
+  max-width: 615px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid #a9f9c4;
+  background: #1f1e1f;
+
+  &__labels {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 27px 0;
+  }
+  &__label {
+    display: block;
+    position: relative;
+
+    border-radius: 6px;
+    border: 1px solid #777;
+    background: #181618;
+  }
+
+  &__input {
+    height: 61px;
+    width: 100%;
+    display: block;
+    padding: 22px 22px 24px 56px;
+    background-color: #181618;
+    border: none;
+    border-radius: 6px;
+    @extend %gilroy-600;
+    color: #575757;
+    font-size: 16px;
+  }
+  &__input::placeholder {
+    @extend %gilroy-600;
+    font-size: 16px;
+    color: #575757;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 11px;
+  }
+  &__icon--password {
+    cursor: pointer;
+  }
+  &__check {
+    margin-bottom: 27px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__check a {
+    margin-left: 5px;
+    color: #a9f9c4;
+  }
+  &__check input {
+    @extend %checkbox-hidden;
+  }
+  &__checkbox {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 26px;
+
+    border-radius: 3px;
+    border: 1px solid #a9f9c4;
+    background: #2f2f2f;
+
+    cursor: pointer;
+  }
+  &__check input:checked + .form-auth__checkbox > svg {
+    display: none;
+  }
+
+  &__btns {
+    width: 100%;
+  }
+  &__btn {
+    margin-bottom: 27px;
+    padding: 18px;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    background: #2cb576;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+  &__info {
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__info a {
+    margin-left: 5px;
+    color: #a9f9c4;
+  }
+}
