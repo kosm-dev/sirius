@@ -140,6 +140,12 @@ body {
   font-size: 36px;
 }
 
+.panel-title {
+  @extend %gilroy-700;
+  font-size: 36px;
+  color: #fff;
+}
+
 .link-special {
   padding-top: 9px;
   padding-bottom: 9px;
@@ -190,8 +196,3 @@ body {
     display: flex;
   }
 }
-
-
-
-
-
