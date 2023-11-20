@@ -1,0 +1,124 @@
+.userhelpdesk {
+  margin-top: 90px;
+  margin-bottom: 211px;
+  margin-left: 108px;
+  &__title {
+    margin-bottom: 77px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0 38px;
+  }
+  &__items {
+    width: 100%;
+    max-width: 568px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+.userhelpdesk-item {
+  padding-top: 27px;
+  padding-bottom: 23px;
+  padding-left: 19px;
+  padding-right: 21px;
+  width: 100%;
+  max-width: 276px;
+  border-radius: 6px;
+  border: 1px solid #a9f9c4;
+  background-color: #1f1e1f;
+  &__title {
+    margin-bottom: 27px;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px 0;
+    @extend %gilroy-500;
+    font-size: 14px;
+    color: #fff;
+  }
+}
+.userhelpdesk-methods {
+  padding: 34px 46px 99px;
+  width: 100%;
+  max-width: 584px;
+  border-radius: 16px;
+  background: #1f1e1f;
+  &__title {
+    margin-bottom: 41px;
+    @extend %gilroy-700;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+.userhelpdesk-table {
+  width: 100%;
+  max-width: 492px;
+  border-radius: 4px;
+  border: 1px solid #a9f9c4;
+  background-color: #1f1e1f;
+  &__row {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #5b5b5b;
+  }
+
+  &__name {
+    min-width: 120px;
+  }
+  &__type {
+    min-width: 120px;
+  }
+  &__descr {
+    min-width: 252px;
+  }
+
+  &__name,
+  &__type,
+  &__descr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__body {
+    @extend %gilroy-400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__head .userhelpdesk-table__col {
+    @extend %gilroy-600;
+    font-size: 12px;
+    color: #fff;
+
+    padding: 10px 12px;
+
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+
+    border-right: 1px solid #5b5b5b;
+  }
+
+  &__head .userhelpdesk-table__col:last-child {
+    border-right: none;
+  }
+  &__body .userhelpdesk-table__row {
+    align-items: stretch;
+  }
+
+  &__body .userhelpdesk-table__col {
+    padding: 10px 12px;
+    text-align: center;
+    border-right: 1px solid #5b5b5b;
+  }
+
+  &__body .userhelpdesk-table__col:last-child {
+    border-right: none;
+  }
+}

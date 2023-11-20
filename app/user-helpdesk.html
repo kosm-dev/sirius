@@ -67,7 +67,7 @@
 
                   <li class="sidebar-menu__item">
 
-                    <a class="sidebar-menu__link" href="#">
+                    <a class="sidebar-menu__link sidebar-menu__link--active" href="#">
                       <div class="sidebar-menu__icon">
                         <img src="images/panel/siderbar/helpdesk.svg" alt="">
                       </div>
@@ -78,7 +78,7 @@
 
                   <li class="sidebar-menu__item">
 
-                    <a class="sidebar-menu__link sidebar-menu__link--active" href="#">
+                    <a class="sidebar-menu__link" href="#">
                       <div class="sidebar-menu__icon">
                         <img src="images/panel/siderbar/api.svg" alt="">
                       </div>
@@ -134,168 +134,231 @@
 
             </div>
 
-            <div class="userapi">
 
+            <div class="userhelpdesk">
 
-              <div class="userapi__title panel-title">
-                API Manager
+              <div class="userhelpdesk__title panel-title">
+                Helpdesk
               </div>
 
-              <div class="userapi__wrapper">
+              <div class="userhelpdesk__wrapper">
 
-                <form class="userapi-form">
+                <div class="userhelpdesk__items">
 
-                  <div class="userapi-form__title">
-                    Your API Key
+                  <div class="userhelpdesk-item">
+
+                    <div class="userhelpdesk-item__title">
+                      Security & Privacy
+                    </div>
+
+                    <div class="userhelpdesk-item__content">
+
+                      <div class="userhelpdesk-item__text">
+                        We are one of the most confidential stress-testing services. We do not log attacks or IP
+                        addresses.
+                      </div>
+                      <div class="userhelpdesk-item__text">
+                        When you register, we do not ask for any information other than your Login and Password. You can
+                        read our information
+                        collection policy in our Privacy Policy.
+                      </div>
+
+
+                    </div>
+
                   </div>
-                  <div class="userapi-form__box">
-                    <label class="userapi-form__label">
-                      <input class="userapi-form__input"
-                        placeholder="$2a$10$LLWutMvIziXMlLCEQzCvwuabe.5P6iXckg7AKzQFtcIx7f2UfQBtm" type="text">
-                    </label>
-                    <button class="userapi-form__btn">
-                      Update API Key
-                    </button>
+
+                  <div class="userhelpdesk-item">
+
+                    <div class="userhelpdesk-item__title">
+                      Payments
+                    </div>
+
+                    <div class="userhelpdesk-item__content">
+
+                      <div class="userhelpdesk-item__text">
+                        Our subscription payment system is automated, exclusively (!) in cryptocurrency.
+                      </div>
+                      <div class="userhelpdesk-item__text">
+                        We do not accept any other payment methods, as they are not secure. After payment you will
+                        receive
+                        balance in 20-30
+                        minutes, depending on currency.
+                      </div>
+
+                    </div>
+
                   </div>
 
-                </form>
 
-                <div class="userapi-documentation">
+                  <div class="userhelpdesk-item">
 
-                  <div class="userapi-documentation__title">
-                    Documentation
+                    <div class="userhelpdesk-item__title">
+                      Methods
+                    </div>
+
+                    <div class="userhelpdesk-item__content">
+
+                      <div class="userhelpdesk-item__text">
+                        This is where we can brag more than others. Our browser methods spoof system information,
+                        randomize fingerprints, and
+                        change the operating systems in the browser.
+                      </div>
+                      <div class="userhelpdesk-item__text">
+                        All requests are legitimate, we don't use security loopholes (like our competitors), our
+                        flooding is completely
+                        identical to users.
+                      </div>
+
+                    </div>
+
                   </div>
 
-                  <div class="userapi-documentation__items">
 
+                  <div class="userhelpdesk-item">
 
-                    <div class="userapi-documentation__item doc-item doc-item--what">
+                    <div class="userhelpdesk-item__title">
+                      Power
+                    </div>
 
-                      <div class="doc-item__head">
-                        <div class="doc-item__subtitle">
-                          What is an API?
-                        </div>
-                        <div class="doc-item__title">
-                          What is an API?
-                        </div>
+                    <div class="userhelpdesk-item__content">
+
+                      <div class="userhelpdesk-item__text">
+                        Venta uses 155 proxies per attack, which means at a ratelimit of 64 to 10,000 requests per
+                        second.
+                      </div>
+                      <div class="userhelpdesk-item__text">
+                        Ariel uses all proxies allocated to the method per attack, the approximate number of proxies at
+                        the moment - 3000. With
+                        a ratelimit of 32 = 90,000 requests per second.
                       </div>
 
-                      <div class="doc-item__body">
-                        <div class="doc-item__content">
-                          An api is needed for automated requests to send an attack. For example, you want to make your
-                          Telegram bot, or your
-                          stresser, and sell subscriptions, but are not good at stress-testing.
+                    </div>
+
+                  </div>
+
+
+
+
+
+                </div>
+
+                <div class="userhelpdesk-methods">
+
+                  <div class="userhelpdesk-methods__title">
+                    All Methods List & Description
+                  </div>
+
+                  <div class="userhelpdesk-table">
+
+                    <div class="userhelpdesk-table__head">
+
+                      <div class="userhelpdesk-table__row">
+                        <div class="userhelpdesk-table__col userhelpdesk-table__name">
+                          Name
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__type">
+                          Type
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__descr">
+                          Description
                         </div>
                       </div>
 
                     </div>
 
 
+                    <div class="userhelpdesk-table__body">
 
-
-                    <div class="userapi-documentation__item doc-item doc-item--example">
-
-                      <div class="doc-item__head">
-                        <div class="doc-item__subtitle">
-                          Examples
+                      <div class="userhelpdesk-table__row">
+                        <div class="userhelpdesk-table__col userhelpdesk-table__name">
+                          STORM-CONNECT
                         </div>
-                        <div class="doc-item__title">
-                          Examples
+                        <div class="userhelpdesk-table__col userhelpdesk-table__type">
+                          L7
                         </div>
-                      </div>
-
-                      <div class="doc-item__body">
-
-                        <div class="doc-item__content">
-                          We have created examples using different languages, with fully working code that you can use
-                          in
-                          your projects.
-                        </div>
-
-                        <div class="doc-item__tags">
-                          <div class="doc-item__tag">TypeScript</div>
-                          <div class="doc-item__tag">Golang</div>
-                        </div>
-
-                      </div>
-
-                    </div>
-
-
-
-                    <div class="userapi-documentation__item doc-item doc-item--valid">
-
-                      <div class="doc-item__head">
-                        <div class="doc-item__subtitle">
-                          Response validation
-                        </div>
-                        <div class="doc-item__title">
-                          Response validation
+                        <div class="userhelpdesk-table__col userhelpdesk-table__descr">
+                          Method is useful against regular webservers/low protected targets with large backend
                         </div>
                       </div>
 
 
-                      <div class="doc-item__body">
-
-                        <div class="doc-item__object">
-                          <div class="doc-item__object-title">
-                            If there is something wrong, we will respond you with:
-                          </div>
-                          <div class="doc-item__object-example">
-                            { success: false, message: "problem description" }
-                          </div>
+                      <div class="userhelpdesk-table__row">
+                        <div class="userhelpdesk-table__col userhelpdesk-table__name">
+                          Rosetta
                         </div>
-
-                        <div class="doc-item__code">
-                          <div class="doc-item__code-title">
-                            If the request is successful:
-                          </div>
-                          <div class="doc-item__code-example">
-                            { success: true, ... }
-                          </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__type">
+                          L7
                         </div>
-
-
-
-                      </div>
-
-                    </div>
-
-
-                    <div class="userapi-documentation__item doc-item doc-item--plan">
-
-                      <div class="doc-item__head">
-                        <div class="doc-item__title">
-                          Current Plan
+                        <div class="userhelpdesk-table__col userhelpdesk-table__descr">
+                          Unique extremely stable and adaptive method with advanced attack settings with aim to bypass
+                          strong ratelimits. Attack
+                          usually takes effect in 1 minute and reaches maximum power in 3-5 minutes.
                         </div>
                       </div>
 
-                      <div class="doc-item__body">
-
-                        <div class="doc-item__content">
-                          Free
+                      <div class="userhelpdesk-table__row">
+                        <div class="userhelpdesk-table__col userhelpdesk-table__name">
+                          DNS
                         </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__type">
+                          L4
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__descr">
+                          Method based on Domain Name System, has biggest amplification power. Recommended for home
+                          connection, unprotected
+                          servers.
+                        </div>
+                      </div>
 
-                        <a class="doc-item__link" href="#">
-                          Upgrade
-                        </a>
+                      <div class="userhelpdesk-table__row">
+                        <div class="userhelpdesk-table__col userhelpdesk-table__name">
+                          ARD
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__type">
+                          L4
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__descr">
+                          UDP based Amplification. Can bypass Anti-DDos protection.
+                        </div>
+                      </div>
 
+                      <div class="userhelpdesk-table__row">
+                        <div class="userhelpdesk-table__col userhelpdesk-table__name">
+                          TCP-IMP
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__type">
+                          L4
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__descr">
+                          Spoofed SYN packets flood, tweaked to bypass some protections.
+                        </div>
+                      </div>
+
+                      <div class="userhelpdesk-table__row">
+                        <div class="userhelpdesk-table__col userhelpdesk-table__name">
+                          FiveM
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__type">
+                          L4
+                        </div>
+                        <div class="userhelpdesk-table__col userhelpdesk-table__descr">
+                          Bypass method for GTA V servers that are using FiveM multiplayer modification framework.
+                        </div>
                       </div>
 
                     </div>
-
-
 
                   </div>
 
                 </div>
 
 
-
               </div>
 
 
             </div>
+
 
 
 
