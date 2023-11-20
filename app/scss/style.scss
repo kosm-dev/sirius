@@ -4,14 +4,23 @@
 @import "libs";
 @import "global";
 
-
 @import "parts/header/header";
 @import "parts/hero/hero";
 @import "parts/features/features";
 @import "parts/methods/methods";
 @import "parts/plans/plans";
 @import "parts/faq/faq";
+@import "parts/footer/footer";
 @import "parts/authorization/authorization";
 
 
-@import "parts/footer/footer";
+@import "panel/user/dashboard";
+@import "panel/user/attackhub";
+@import "panel/user/purchase";
+@import "panel/user/helpdesk";
+@import "panel/user/settings";
+
+
+
+@import "components/sidebar";
+@import "components/selects";

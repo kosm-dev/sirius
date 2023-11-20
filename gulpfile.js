@@ -32,6 +32,7 @@ function styles() {
 
 function scripts() {
   return src([
+    'node_modules/choices.js/public/assets/scripts/choices.js',
     'node_modules/swiper/swiper-bundle.js',
     'app/js/main.js'
   ])

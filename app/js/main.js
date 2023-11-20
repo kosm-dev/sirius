@@ -2,8 +2,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   headerScroll('.header');
-
   headerScroll('.header-special');
+
+
+
 
   function headerScroll(headerClass) {
     const header = document.querySelector(headerClass);
@@ -32,5 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
   });
+
+  const element = document.querySelector('.user-select');
+  const choices = new Choices(element);
+
 
 });

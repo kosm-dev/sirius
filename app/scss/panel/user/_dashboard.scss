@@ -1,0 +1,34 @@
+.userdashboard {
+  &__wrapper {}
+  &__itembig {}
+  &__item {}
+}
+.userdashboard-info {
+  &__title {}
+  &__text {}
+  &__nickname {}
+}
+.userdashboard-updates {
+  &__info {}
+  &__list {}
+  &__item {}
+  &__head {}
+  &__date {}
+  &__title {}
+  &__content {}
+}
+.userdashboard-notification {
+  &__history {}
+  &__title {}
+  &__items {}
+  &__item {}
+}
+.notification-history {
+  &__title {}
+  &__items {}
+  &__item {}
+}
+.notification-info {
+  &__title {}
+  &__value {}
+}
