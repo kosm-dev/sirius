@@ -34,9 +34,9 @@
 
                     <a class="sidebar-menu__link sidebar-menu__link--active" href="#">
                       <div class="sidebar-menu__icon">
-                        <img src="images/panel/siderbar/userdashboard.svg" alt="">
+                        <img src="images/panel/siderbar/dashboard.svg" alt="">
                       </div>
-                      userdashboard
+                      Dashboard
                     </a>
 
                   </li>
@@ -103,39 +103,66 @@
                 </ul>
               </nav>
 
-              <!-- <select class="user-select">
+              
+              <div class="sidebar__user-dropdown user-dropdown">
 
-                <option class="user-select__option" value="">
 
-                  <div class="user-select__box">
-                    <div class="user-select__avatar">
+                <div class="user-dropdown__wrapper">
+
+                  <div class="user-dropdown__content">
+                    <div class="user-dropdown__avatar">
                       <img src="images/panel/siderbar/user.png" alt="">
                     </div>
-                    <div class="user-select__info">
-                      <div class="user-select__position">User</div>
-                      <div class="user-select__nickname">Gatto</div>
+
+                    <div class="user-dropdown__info">
+                      <div class="user-dropdown__position">User</div>
+                      <div class="user-dropdown__nickname">Gatto</div>
                     </div>
                   </div>
 
-                </option>
-
-
-                <option class="user-select__option" value="">
-
-                  <div class="user-select__box">
-                    <div class="user-select__avatar">
-                      <img src="images/panel/siderbar/user.png" alt="">
-                    </div>
-                    <div class="user-select__info">
-                      <div class="user-select__position">User</div>
-                      <div class="user-select__nickname">Gatto</div>
-                    </div>
+                  <div class="user-dropdown__icon">
+                    <img src="images/panel/siderbar/arrow-down.svg" alt="">
                   </div>
 
-                </option>
+                </div>
 
 
-              </select> -->
+
+
+              </div>
+
+              <!-- <div class="sidebar__user-dropdown user-dropdown">
+                <div class="dropdown">
+                  <div class="select">
+
+                    <span class="selected">
+                      <div class="user-dropdown__box">
+                        <div class="user-dropdown__avatar">
+                          <img src="images/panel/siderbar/user.png" alt="">
+                        </div>
+                        <div class="user-dropdown__info">
+                          
+                        </div>
+                      </div>
+                    </span>
+
+                    <div class="caret">
+                      <img src="images/panel/siderbar/arrow-down.svg" alt="">
+                    </div>
+
+                  </div>
+                  <div class="menu">
+                    <a class="active" href="#">
+                      Gatto
+                    </a>
+
+                    <a href="#">
+                      x1na
+                    </a>
+
+                  </div>
+                </div>
+              </div> -->
 
             </div>
 
@@ -143,17 +170,24 @@
 
               <div class="userdashboard-info">
 
-                <div class="userdashboard-info__title">
-                  userdashboard
+                <div class="userdashboard-info__content">
+                  <div class="userdashboard-info__title">
+                    Dashboard
+                  </div>
+                  <div class="userdashboard-info__text">
+                    Good evening,
+                  </div>
+                  <div class="userdashboard-info__nickname">
+                    Gatto
+                  </div>
+
                 </div>
 
-                <div class="userdashboard-info__text">
-                  Good evening,
+                <div class="userdashboard-info__img">
+                  <img src="images/panel/user/dashboard/dashboard-bg.svg" alt="">
                 </div>
 
-                <div class="userdashboard-info__nickname">
-                  Gatto
-                </div>
+
 
 
               </div>
@@ -165,27 +199,146 @@
 
                   <div class="userdashboard-updates">
 
-                    <div class="userdashboard-updates__info"></div>
+                    <div class="userdashboard-updates__title">
+                      Last updates
+                    </div>
 
-                    <div class="userdashboard-updates__list">
+                    <div class="userdashboard-updates__info">
 
-                      <div class="userdashboard-updates__item">
-
-                        <div class="userdashboard-updates__head">
-                          <div class="userdashboard-updates__date">[Date: 2023-05-15]</div>
-                          <div class="userdashboard-updates__title">Improved DDoS mitigation</div>
-                        </div>
-
-                        <div class="userdashboard-updates__content">
-                          Upgraded algorithms and infrastructure for enhanced protection against DDoS attacks, ensuring
-                          greater stability and
-                          availability of networks and servers.
-                        </div>
+                      <div class="userdashboard-updates__progress">
+                        <svg width="8" height="396" viewBox="0 0 8 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <line x1="4" y1="-4.37114e-08" x2="4" y2="45" stroke="#2CB576" stroke-width="2" />
+                          <line x1="4" y1="77" x2="4.00001" y2="215" stroke="#2CB576" stroke-width="2" />
+                          <line x1="4" y1="247" x2="4.00001" y2="376" stroke="#2CB576" stroke-width="2" />
+                          <circle cx="4" cy="61" r="4" fill="#A9F9C4" />
+                          <circle cx="4" cy="231" r="4" fill="#F7F9A9" />
+                          <circle cx="4" cy="392" r="4" fill="#C3A9F9" />
+                        </svg>
 
                       </div>
 
+                      <div class="userdashboard-updates__list">
+
+                        <div class="userdashboard-updates__item">
+
+                          <div class="userdashboard-updates__head">
+                            <div class="userdashboard-updates__date">[Date: 2023-05-15]</div>
+                            <div class="userdashboard-updates__headtitle userdashboard-updates__headtitle--mitigation">
+                              Improved DDoS mitigation
+                            </div>
+                          </div>
+
+                          <div class="userdashboard-updates__content">
+                            Upgraded algorithms and infrastructure for enhanced protection against DDoS attacks,
+                            ensuring greater stability and
+                            availability of networks and servers.
+                          </div>
+
+                        </div>
+
+
+                        <div class="userdashboard-updates__item">
+
+                          <div class="userdashboard-updates__head">
+                            <div class="userdashboard-updates__date">[Date: 2023-05-15]</div>
+                            <div class="userdashboard-updates__headtitle userdashboard-updates__headtitle--methods">
+                              New stress testing methods
+                            </div>
+                          </div>
+
+                          <div class="userdashboard-updates__content">
+                            Introduced additional stress testing methods to simulate a wider range of scenarios,
+                            enabling more comprehensive
+                            assessments of system resilience and performance.
+                          </div>
+
+                        </div>
+
+
+                        <div class="userdashboard-updates__item">
+
+                          <div class="userdashboard-updates__head">
+                            <div class="userdashboard-updates__date">[Date: 2023-05-15]</div>
+                            <div class="userdashboard-updates__headtitle userdashboard-updates__headtitle--performance">
+                              Performance optimizations
+                            </div>
+                          </div>
+
+                          <div class="userdashboard-updates__content">
+                            Fine-tuned infrastructure to optimize stress testing performance, resulting in faster test
+                            initiation and more
+                            responsive results for quicker and more accurate evaluations.
+                          </div>
+
+                        </div>
+
+
+
+                      </div>
                     </div>
 
+
+
+
+                  </div>
+
+                  <div class="dashboard-server">
+                    <div class="dashboard-server__title">
+                      Current server load
+                    </div>
+
+                    <div class="dashboard-server__items">
+
+                      <div class="dashboard-server__item">
+                        <div class="dashboard-server__head">
+                          <div class="dashboard-server__headtitle">Server #1</div>
+                          <div class="dashboard-server__value">
+                            23.1
+                          </div>
+                        </div>
+                        <div class="dashboard-server__load dashboard-server__load--low">
+                        </div>
+                      </div>
+
+                      <div class="dashboard-server__item">
+                        <div class="dashboard-server__head">
+                          <div class="dashboard-server__headtitle">Server #2</div>
+                          <div class="dashboard-server__value">
+                            72.6
+                          </div>
+                        </div>
+                        <div class="dashboard-server__load dashboard-server__load--high">
+                        </div>
+                      </div>
+
+
+                      <div class="dashboard-server__item">
+                        <div class="dashboard-server__head">
+                          <div class="dashboard-server__headtitle">Server #3</div>
+                          <div class="dashboard-server__value">
+                            23.1
+                          </div>
+                        </div>
+                        <div class="dashboard-server__load dashboard-server__load--low">
+                        </div>
+                      </div>
+
+
+                      <div class="dashboard-server__item">
+                        <div class="dashboard-server__head">
+                          <div class="dashboard-server__headtitle">Server #4</div>
+                          <div class="dashboard-server__value">
+                            72.6
+                          </div>
+                        </div>
+                        <div class="dashboard-server__load dashboard-server__load--high">
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
 
                   </div>
 
@@ -196,29 +349,69 @@
                   <div class="userdashboard-notification">
 
                     <div class="userdashboard-notification__history notification-history">
-                      <div class="userdashboard-notification__title notification-history__title">
+                      <div class="notification-history__title">
                         Notification center
                       </div>
+
                       <div class="notification-history__items">
+
                         <div class="notification-history__item">
-                          Improved DDoS mitigation
+                          <div class="notification-history__text notification-history__text--mitigation">
+                            Improved DDoS mitigation
+
+                          </div>
                         </div>
+
                         <div class="notification-history__item">
-                          New stress testing methods
+                          <div class="notification-history__text notification-history__text--methods">
+                            New stress testing methods
+                          </div>
                         </div>
+
                       </div>
+
                     </div>
 
                     <div class="userdashboard-notification__items">
 
-                      <div class="userdashboard-notification__item notification-info">
-                        <div class="notification-info__title userdashboard-notification__title">
+                      <div class="notification-info">
+                        <div class="notification-info__title">
                           Total servers
                         </div>
                         <div class="notification-info__value">
                           7
                         </div>
                       </div>
+
+                      <div class="notification-info">
+                        <div class="notification-info__title">
+                          Total users
+                        </div>
+                        <div class="notification-info__value">
+                          198
+                        </div>
+                      </div>
+
+                      <div class="notification-info">
+                        <div class="notification-info__title">
+                          Total testss
+                        </div>
+                        <div class="notification-info__value">
+                          24944
+                        </div>
+                      </div>
+
+                      <div class="notification-info">
+                        <div class="notification-info__title">
+                          Current plan
+                        </div>
+                        <div class="notification-info__value">
+                          Free
+                        </div>
+                      </div>
+
+
+
                     </div>
 
 

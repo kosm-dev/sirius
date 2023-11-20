@@ -1,34 +1,289 @@
 .userdashboard {
-  &__wrapper {}
-  &__itembig {}
-  &__item {}
+  height: 100%;
+  width: 100%;
+  max-width: 1382px;
+  margin-top: 54px;
+  margin-left: 78px;
+  margin-right: 15px;
+  margin-bottom: 95px;
+  &__wrapper {
+    display: flex;
+    gap: 0 16px;
+  }
+  &__itembig {
+    display: flex;
+    padding-top: 34px;
+    padding-left: 27px;
+    padding-right: 66px;
+    padding-bottom: 85px;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 16px;
+    background: #1f1e1f;
+  }
+  &__item {
+    width: 100%;
+    max-width: 266px;
+  }
 }
 .userdashboard-info {
-  &__title {}
-  &__text {}
-  &__nickname {}
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 23px;
+  padding-top: 36px;
+  padding-left: 30px;
+  padding-bottom: 76px;
+  border-radius: 16px;
+  border: 1px solid #777;
+  background: linear-gradient(267deg, #2a2a2a 2.07%, #1d1d1d 99.8%);
+  &__content {
+    padding-right: 600px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -27px;
+    right: 27px;
+  }
+  &__title {
+    margin-bottom: 36px;
+    @extend %gilroy-700;
+    font-size: 36px;
+    color: #fff;
+  }
+  &__text {
+    @extend %gilroy-500;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__nickname {
+    @extend %gilroy-700;
+    font-size: 32px;
+    color: #fff;
+  }
 }
 .userdashboard-updates {
-  &__info {}
-  &__list {}
-  &__item {}
-  &__head {}
-  &__date {}
-  &__title {}
-  &__content {}
+  margin-right: auto;
+  &__title {
+    margin-left: 19px;
+    margin-bottom: 73px;
+    @extend %gilroy-700;
+    font-size: 20px;
+    color: #fff;
+  }
+  &__info {
+    display: flex;
+  }
+  &__progress {
+    margin-right: 32px;
+  }
+  &__list {
+    width: 100%;
+    max-width: 327px;
+    display: flex;
+    flex-direction: column;
+    gap: 47px 0;
+  }
+  
+  &__head {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+  }
+  &__date {
+    margin-right: 5px;
+    @extend %gilroy-500;
+    font-size: 12px;
+    color: #8f8f8f;
+  }
+  &__headtitle {
+    position: relative;
+    padding-left: 11px;
+    @extend %gilroy-600;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__headtitle:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  &__headtitle--mitigation:after {
+    background-color: #a9f9c4;
+  }
+  &__headtitle--methods:after {
+    background-color: #f7f9a9;
+  }
+
+  &__headtitle--performance:after {
+    background-color: #c3a9f9;
+  }
+
+  &__content {
+    @extend %gilroy-600;
+    font-size: 16px;
+    color: #fff;
+  }
 }
+
+.dashboard-server {
+  width: 100%;
+  max-width: 490px;
+  &__title {
+    margin-left: 41px;
+    margin-bottom: 53px;
+    @extend %gilroy-700;
+    font-size: 20px;
+    color: #fff;
+  }
+  &__items {
+    padding-top: 17px;
+    padding-bottom: 24px;
+    border-left: 2px solid #2f2f2f;
+    padding-left: 41px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+  }
+  &__item {
+    padding-top: 5px;
+    padding-left: 27px;
+    padding-bottom: 34px;
+    padding-right: 54px;
+    border-radius: 6px;
+    background: #2f2f2f;
+    height: 93px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    @extend %gilroy-600;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  &__headtitle {
+    margin-right: 15px;
+    color: #8f8f8f;
+  }
+  &__value {
+    text-align: center;
+    min-width: 71px;
+    padding: 4px 20px;
+    color: #fff;
+    border-radius: 2px;
+    background: #494949;
+  }
+  &__value--low {
+    color: #a9f9c4;
+  }
+  &__value--high {
+    color: #f9a9a9;
+  }
+  &__load {
+    width: 100%;
+    height: 12px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  &__load--low {
+    background: linear-gradient(90deg, #a9f9c4 0%, rgba(169, 249, 196, 0.21) 100%);
+  }
+
+  &__load--high {
+    background: linear-gradient(90deg, #f9a9a9 0%, rgba(249, 169, 169, 0.21) 100%);
+  }
+}
+
 .userdashboard-notification {
-  &__history {}
-  &__title {}
-  &__items {}
-  &__item {}
+  &__title {
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+  }
 }
 .notification-history {
-  &__title {}
-  &__items {}
-  &__item {}
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #1f1e1f;
+  padding-top: 16px;
+  padding-left: 9px;
+  padding-right: 33px;
+  padding-bottom: 15px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0;
+  }
+  &__item {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 6px;
+    padding-right: 17px;
+    border-radius: 6px;
+    background: #252525;
+  }
+  &__text {
+    position: relative;
+    @extend %gilroy-500;
+    font-size: 10px;
+    color: #fff;
+    padding-left: 13px;
+  }
+  &__text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  &__text--mitigation:after {
+    background-color: #a9f9c4;
+  }
+
+  &__text--methods:after {
+    background-color: #f7f9a9;
+  }
 }
 .notification-info {
-  &__title {}
-  &__value {}
+  height: 111px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  background: #1f1e1f;
+  padding-top: 13px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 34px;
+  @extend %gilroy-700;
+  &__title {
+    align-self: flex-start;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__value {
+    font-size: 36px;
+    color: #a9f9c4;
+  }
 }
