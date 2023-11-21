@@ -59,9 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  // const element = document.querySelector('.userattackhub-select');
+  const choices = new Choices('.userattackhub-select', {
+    searchEnabled: false,
+  });
 
-// переписать ввиде функции
-// пофиксить спойлер
+
+
+  // переписать ввиде функции
+  // пофиксить спойлер
   const spoilerContent = document.querySelectorAll(".spoiler__content");
 
   spoilerContent.forEach((item) => {

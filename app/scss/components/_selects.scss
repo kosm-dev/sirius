@@ -1,17 +1,32 @@
-.choices > .user-select {
-  padding-left: 30px;
-  border-radius: 6px;
-  background: #2f2f2f!important;
-  &__option {
+// .choices > .user-select {
+//   padding-left: 30px;
+//   border-radius: 6px;
+//   background: #2f2f2f!important;
+//   &__option {
+//   }
+//   &__box {
+//   }
+//   &__avatar {
+//   }
+//   &__info {
+//   }
+//   &__position {
+//   }
+//   &__nickname {
+//   }
+// }
+
+.userattackhub__select {
+  .choices {
+    @extend %gilroy-500;
+    font-size: 16px;
+    color: #fff;
   }
-  &__box {
+  .choices__inner {
+    border-radius: 6px;
+    background: #181618;
   }
-  &__avatar {
-  }
-  &__info {
-  }
-  &__position {
-  }
-  &__nickname {
+  .choices__list {
+    background: #181618;
   }
 }
