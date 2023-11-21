@@ -1,0 +1,61 @@
+.purchase-faq {
+  padding-top: 42px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-bottom: 42px;
+  width: 100%;
+  max-width: 399px;
+  border-radius: 16px;
+  border: 1px solid #a9f9c4;
+
+  background: #1f1e1f;
+  &__title {
+    margin-bottom: 12px;
+    @extend %gilroy-700;
+    font-size: 36px;
+    color: #fff;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 13px 0;
+  }
+}
+
+.purchase-faq {
+  .spoiler {
+    border-radius: 10px;
+    background: #2a2a2a;
+    padding: 20px 26px;
+    cursor: pointer;
+    &__content {
+      overflow: hidden;
+    }
+    &__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__title {
+      @extend %gilroy-700;
+      font-size: 16px;
+      color: #fff;
+    }
+    &__icon {
+      margin-left: 20px;
+    }
+    &__icon {
+      transition: transform 0.2s;
+    }
+    &__icon.open {
+      transform: rotate(180deg);
+    }
+    &__descr {
+      height: 0;
+      transition: all 0.2s;
+    }
+    &__descr.active {
+      margin-top: 9px;
+    }
+  }
+}

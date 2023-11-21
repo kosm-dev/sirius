@@ -28,8 +28,8 @@
     content: "";
     position: absolute;
     width: 626px;
-    height: 318px;
     top: 0;
+    bottom: 0;
     right: 0;
     z-index: 1;
     border-radius: 16px;
@@ -58,7 +58,7 @@
   width: 7px;
   height: 14px;
 }
-.swiper-slide {
+.faq-slider .swiper-slide {
   max-width: 626px;
   z-index: 5;
 }
