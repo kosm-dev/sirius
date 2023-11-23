@@ -216,6 +216,10 @@ body {
 
 .content {
   position: relative;
+  padding-left: 401px;
+  &--special {
+    padding-left: 431px;
+  }
   &__inner {
     display: flex;
   }

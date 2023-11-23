@@ -1,11 +1,14 @@
 .sidebar {
+  position: absolute;
+  left: 0;
+  z-index: 998;
   padding-top: 67px;
   padding-bottom: 52px;
-  min-height: 100vh;
   background-color: #1f1e1f;
   display: flex;
   flex-direction: column;
   width: 323px;
+  height: 100%;
   &__logo {
     display: block;
     margin-left: auto;
@@ -39,6 +42,11 @@
     @extend %gilroy-700;
     font-size: 16px;
     color: #fff;
+    transition: all 0.2s;
+  }
+  &__link:hover {
+    background: #2cb576;
+    border-radius: 6px;
   }
   &__link--active {
     border-radius: 6px;
