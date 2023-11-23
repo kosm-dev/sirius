@@ -142,23 +142,16 @@
 
               <div class="userattackhub__wrapper">
 
+
+
                 <form class="userattackhub-send">
 
-                  <div class="userattackhub-tabs">
-
-                    <div class="userattackhub-tab">
-                      Free
-                    </div>
-
-                    <div class="userattackhub-tab">
-                      Layer 4
-                    </div>
-
-                    <div class="userattackhub-tab">
-                      Layer 7
-                    </div>
-
+                  <div class="tab__items">
+                    <div class="tab__item tab__item--active">Free</div>
+                    <div class="tab__item">Layer 4</div>
+                    <div class="tab__item">Layer 7</div>
                   </div>
+
 
                   <div class="userattackhub-send__box">
                     <label class="userattackhub-send__label">
@@ -192,21 +185,44 @@
 
 
 
-                    <div class="userattackhub-send__item userattackhub__select">
+                    <div class="userattackhub-send__item">
+                      <label class="userattackhub-send__label">
+                        Method
 
-                      <select class="userattackhub-select">
-                        <option value="">
-                          Select method
-                        </option>
-                        <option value="">
-                          get
-                        </option>
-                        <option value="">
-                          post
-                        </option>
-                      </select>
+                        <select class="userattackhub__select-method">
+                          <option value="">
+                            Select method
+                          </option>
+                          <option value="">
+                            get
+                          </option>
+                          <option value="">
+                            post
+                          </option>
+                        </select>
+                      </label>
+
 
                     </div>
+
+
+                    <div class="userattackhub-send__item">
+                      <label class="userattackhub-send__label">
+                        Request Method
+                        <select class="userattackhub__select-request">
+                          <option value="">
+                            get
+                          </option>
+                          <option value="">
+                            post
+                          </option>
+                        </select>
+                      </label>
+                    </div>
+
+
+
+
 
 
 
@@ -216,8 +232,138 @@
 
                 </form>
 
+
+
                 <div class="userattackhub-info">
 
+                  <div class="userattackhub-info__item tabcontent">
+                    Free
+
+                  </div>
+
+                  <div class="userattackhub-info__item tabcontent">
+
+
+                    <div class="userattackhub-table">
+
+                      <div class="userattackhub-table__head">
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            Target
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            Duration
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            Method
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            Time left
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <div class="userattackhub-table__body">
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="userattackhub-table__footer">
+
+                        <button class="stop-all">
+                          Stop All
+                        </button>
+
+
+                        <div class="pagination">
+
+                          <ul class="pagination__list">
+                            <li class="pagination__item">
+                              <a class="pagination__link" href="#">
+                                1
+                              </a>
+                            </li>
+                            <li class="pagination__item">
+                              <a class="pagination__link" href="#">
+                                2
+                              </a>
+                            </li>
+                            <li class="pagination__item">
+                              <a class="pagination__link pagination__link--active" href="#">
+                                3
+                              </a>
+                            </li>
+                            <li class="pagination__item">
+                              <a class="pagination__link" href="#">
+                                4
+                              </a>
+                            </li>
+
+                          </ul>
+
+                        </div>
+                      </div>
+
+
+
+                    </div>
+
+                  </div>
+
+                  <div class="userattackhub-info__item tabcontent">
+                    Layer 7
+
+                  </div>
 
                 </div>
 

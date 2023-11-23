@@ -2,6 +2,11 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+
+
+
+
+
   if (document.querySelector('.header') || document.querySelector('.header-special')) {
     headerScroll('.header');
     headerScroll('.header-special');
@@ -59,15 +64,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
-  // const element = document.querySelector('.userattackhub-select');
-  const choices = new Choices('.userattackhub-select', {
+  const selectRequest = new Choices('.userattackhub__select-request', {
     searchEnabled: false,
+    allowHTML: true,
   });
+
+  const selectMethod = new Choices('.userattackhub__select-method', {
+    searchEnabled: false,
+    allowHTML: true,
+  });
+
 
 
 
   // переписать ввиде функции
   // пофиксить спойлер
+
+
   const spoilerContent = document.querySelectorAll(".spoiler__content");
 
   spoilerContent.forEach((item) => {
@@ -92,38 +105,47 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // const element = document.querySelector('.user-select');
-  // const choices = new Choices(element);
+  // tabs
+  const tabs = document.querySelectorAll('.tab__item'),
+    tabsContent = document.querySelectorAll('.tabcontent'),
+    tabsParent = document.querySelector('.tab__items');
 
-  // dropdowns
-  // const dropdowns = document.querySelectorAll('.dropdown');
-  // dropdowns.forEach(dropdown => {
-  //   const select = dropdown.querySelector('.select'),
-  //     caret = dropdown.querySelector('.caret'),
-  //     menu = dropdown.querySelector('.menu'),
-  //     options = dropdown.querySelectorAll('.menu a'),
-  //     selected = dropdown.querySelector('.selected');
+  function hideTabContent() {
+    tabsContent.forEach(item => {
+      item.classList.add('hide');
+      item.classList.remove('show');
 
-  //   select.addEventListener('click', () => {
-  //     select.classList.toggle('select-clicked');
-  //     caret.classList.toggle('caret-rotate');
-  //     menu.classList.toggle('menu-open');
-  //   });
-  //   options.forEach(option => {
-  //     option.addEventListener('click', () => {
-  //       selected.innerText = option.innerText;
+    });
 
-  //       select.classList.remove('select-clicked');
-  //       caret.classList.remove('caret-rotate');
-  //       menu.classList.remove('menu-open');
+    tabs.forEach(item => {
+      item.classList.remove('tab__item--active');
+    });
+  }
 
-  //       options.forEach(option => {
-  //         option.classList.remove('active');
-  //       });
-  //       option.classList.add('active');
-  //     });
-  //   });
-  // });
+  function showTabContent(i = 0) {
+    tabsContent[i].classList.add('show');
+    tabsContent[i].classList.remove('hide');
+    tabs[i].classList.add('tab__item--active');
+  }
+
+  hideTabContent();
+
+  showTabContent();
+  tabsParent.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if (target && target.classList.contains('tab__item')) {
+      tabs.forEach((item, i) => {
+        if (target == item) {
+          hideTabContent();
+
+          showTabContent(i);
+        }
+      });
+    }
+
+
+  });
 
 
 });

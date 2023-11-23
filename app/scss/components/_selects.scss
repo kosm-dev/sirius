@@ -16,8 +16,10 @@
 //   }
 // }
 
-.userattackhub__select {
+
+.userattackhub-send__item{
   .choices {
+    margin-top: 12px;
     @extend %gilroy-500;
     font-size: 16px;
     color: #fff;
