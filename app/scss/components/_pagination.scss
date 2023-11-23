@@ -1,0 +1,24 @@
+.pagination {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 43px;
+    height: 43px;
+    padding: 12px;
+    @extend %gilroy-500;
+    font-size: 16px;
+    color: #fff;
+
+    border-radius: 6px;
+    background-color: #2f2f2f;
+  }
+  &__link--active {
+    border: 1px solid #a9f9c4;
+  }
+}

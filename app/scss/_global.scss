@@ -121,6 +121,30 @@ body {
     height: 24px;
   }
 }
+
+.timeleft-btn {
+  @extend %gilroy-500;
+  font-size: 12px;
+  color: #fff;
+
+  padding: 5px 23px;
+  border-radius: 6px;
+  background: #2f2f2f;
+  border: none;
+  cursor: pointer;
+}
+
+.stop-all {
+  min-height: 31px;
+  padding: 8px 43px;
+  @extend %gilroy-700;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 6px;
+  background: #2f2f2f;
+  border: none;
+  cursor: pointer;
+}
 .signup {
   display: inline-block;
   min-height: 56px;

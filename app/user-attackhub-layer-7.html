@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Stresser</title>
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <main class="main">
+
+      <div class="content">
+        <div class="container-fluid">
+
+
+          <div class="content__inner">
+
+            <div class="sidebar">
+
+              <a class="sidebar__logo logo-panel" href="#">
+                <img src="images/panel/logo-panel.svg" alt="logo panel">
+              </a>
+
+              <nav class="sidebar__menu sidebar-menu">
+                <ul class="sidebar-menu__list">
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/dashboard.svg" alt="">
+                      </div>
+                      Dashboard
+                    </a>
+
+                  </li>
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link sidebar-menu__link--active" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/attack.svg" alt="">
+                      </div>
+                      Attack Hub
+                    </a>
+
+                  </li>
+
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/purchase.svg" alt="">
+                      </div>
+                      Purchase
+                    </a>
+
+                  </li>
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/helpdesk.svg" alt="">
+                      </div>
+                      Helpdesk
+                    </a>
+
+                  </li>
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/api.svg" alt="">
+                      </div>
+                      API Manager
+                    </a>
+
+                  </li>
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/settings.svg" alt="">
+                      </div>
+                      Settings
+                    </a>
+
+                  </li>
+
+
+
+
+                </ul>
+              </nav>
+
+
+              <div class="sidebar__user-dropdown user-dropdown">
+
+
+                <div class="user-dropdown__wrapper">
+
+                  <div class="user-dropdown__content">
+                    <div class="user-dropdown__avatar">
+                      <img src="images/panel/siderbar/user.png" alt="">
+                    </div>
+
+                    <div class="user-dropdown__info">
+                      <div class="user-dropdown__position">User</div>
+                      <div class="user-dropdown__nickname">Gatto</div>
+                    </div>
+                  </div>
+
+                  <div class="user-dropdown__icon">
+                    <img src="images/panel/siderbar/arrow-down.svg" alt="">
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+
+            <div class="userattackhub">
+
+              <div class="userattackhub__title panel-title">
+                Attack Hub
+              </div>
+
+              <div class="userattackhub__wrapper">
+
+
+
+                <form class="userattackhub-send">
+
+                  <div class="tab__items">
+                    <a href="#" class="tab__item">Free</a>
+                    <a href="#" class="tab__item">Layer 4</a>
+                    <a href="#" class="tab__item tab__item--active">Layer 7</a>
+                  </div>
+
+
+                  <div class="userattackhub-send__box">
+                    <label class="userattackhub-send__label">
+                      Target
+                      <input class="userattackhub-send__input" type="text" placeholder="https://example.com">
+                    </label>
+                  </div>
+
+
+
+                  <div class="userattackhub-send__items">
+
+                    <div class="userattackhub-send__item">
+
+                      <label class="userattackhub-send__label">
+                        Duration
+                        <input class="userattackhub-send__input" type="text" placeholder="Min: 15, Max: 3000 sec">
+                      </label>
+
+                    </div>
+
+                    <div class="userattackhub-send__item">
+
+                      <label class="userattackhub-send__label">
+                        Concurrents
+                        <input class="userattackhub-send__input" type="text" placeholder="Concurrents">
+                      </label>
+
+                    </div>
+
+
+
+
+                    <div class="userattackhub-send__item">
+                      <label class="userattackhub-send__label">
+                        Method
+
+                        <select class="userattackhub__select-method">
+                          <option value="">
+                            Select method
+                          </option>
+                          <option value="">
+                            get
+                          </option>
+                          <option value="">
+                            post
+                          </option>
+                        </select>
+                      </label>
+
+
+                    </div>
+
+
+                    <div class="userattackhub-send__item">
+                      <label class="userattackhub-send__label">
+                        Request Method
+                        <select class="userattackhub__select-request">
+                          <option value="">
+                            GET
+                          </option>
+                          <option value="">
+                            POST
+                          </option>
+                        </select>
+                      </label>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="userattackhub-send__btns">
+                    <button class="userattackhub-send__btn" type="submit">
+                      Send Attack
+                    </button>
+                  </div>
+
+                </form>
+
+
+
+                <div class="userattackhub-info">
+
+                  <div class="userattackhub-info__item">
+                    <div class="userattackhub-table">
+
+                      <div class="userattackhub-table__head">
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            Target
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            Duration
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            Method
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            Time left
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <div class="userattackhub-table__body">
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                        <div class="userattackhub-table__row">
+
+                          <div class="userattackhub-table__col userattackhub-table__target">
+                            htpps://example.com/ro...
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__duration ">
+                            120
+                          </div>
+
+                          <div class="userattackhub-table__col userattackhub-table__method">
+                            HTTP-Storm
+                          </div>
+
+
+                          <div class="userattackhub-table__col userattackhub-table__timeleft">
+                            98 <button class="timeleft-btn">Stop</button>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="userattackhub-table__footer">
+
+                        <button class="stop-all">
+                          Stop All
+                        </button>
+
+
+                        <div class="pagination">
+
+                          <ul class="pagination__list">
+                            <li class="pagination__item">
+                              <a class="pagination__link pagination__link--active" href="#">
+                                1
+                              </a>
+                            </li>
+                            <li class="pagination__item">
+                              <a class="pagination__link" href="#">
+                                2
+                              </a>
+                            </li>
+                            <li class="pagination__item">
+                              <a class="pagination__link" href="#">
+                                3
+                              </a>
+                            </li>
+                            <li class="pagination__item">
+                              <a class="pagination__link" href="#">
+                                4
+                              </a>
+                            </li>
+
+                          </ul>
+
+                        </div>
+                      </div>
+
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </main>
+
+
+
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
