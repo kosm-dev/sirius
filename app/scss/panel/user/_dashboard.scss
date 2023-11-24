@@ -63,6 +63,7 @@
 }
 .userdashboard-updates {
   margin-right: auto;
+  padding-right: 30px;
   &__title {
     margin-left: 19px;
     margin-bottom: 73px;
@@ -81,6 +82,7 @@
     max-width: 327px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 47px 0;
   }
   

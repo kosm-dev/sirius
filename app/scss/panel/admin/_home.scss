@@ -1,0 +1,74 @@
+.userdashboard__itembig--admin {
+  padding-bottom: 24px;
+}
+.userdashboard-updates__title--admin {
+  margin-bottom: 61px;
+}
+.userdashboard-updates__list--admin {
+  max-width: 394px;
+  gap: 33px 0;
+}
+.userdashboard-updates__head--admin {
+  margin-bottom: 4px;
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 11px;
+  padding-right: 62px;
+  border-radius: 6px;
+  background-color: #181618;
+}
+.userdashboard-updates__head--admin > .userdashboard-updates__edit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+}
+
+.userdashboard-updates__content--admin {
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  padding-left: 11px;
+  padding-right: 56px;
+  border-radius: 6px;
+  background: #181618;
+}
+
+.userdashboard-updates__content--admin > .userdashboard-updates__edit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+}
+
+.userdashboard-updates__progress--admin {
+  margin-top: 12px;
+  margin-right: 21px;
+}
+
+.notification-history__item--admin {
+  position: relative;
+  padding-right: 45px;
+}
+
+.notification-history__item--admin > .notification-history__edit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.userdashboard-updates__add {
+  margin-top: -20px;
+  min-width: 217px;
+  min-height: 44px;
+  padding: 12px 45px;
+  @extend %gilroy-700;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background: #2cb576;
+  cursor: pointer;
+}
