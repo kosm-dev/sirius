@@ -1,0 +1,104 @@
+.adminmethods {
+  margin-top: 90px;
+  margin-bottom: 199px;
+  width: 100%;
+  max-width: 1438px;
+  &__title {
+    margin-bottom: 71px;
+  }
+  &__wrapper {
+    border-radius: 16px;
+    background: #1f1e1f;
+    padding-top: 30px;
+    padding-left: 19px;
+    padding-right: 34px;
+    padding-bottom: 52px;
+  }
+  &__adds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__add {
+    padding: 19px 50px;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+    background: #2cb576;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+
+.adminmethods-table {
+  margin-bottom: 76px;
+  &__head {
+    margin-bottom: 23px;
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+    border-radius: 6px;
+    background: #2f2f2f;
+  }
+  &__head .adminmethods-table__col {
+    padding-right: 16px;
+  }
+  &__head .adminmethods-table__method {
+    padding-left: 47px;
+  }
+  &__head .adminmethods-table__hubname {
+    padding-left: 5px;
+  }
+
+  &__method {
+    min-width: 252px;
+  }
+  &__hubname {
+    min-width: 368px;
+  }
+  &__layer {
+    min-width: 319px;
+  }
+  &__category {
+    min-width: 267px;
+  }
+  &__action {
+    min-width: 178px;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 7px 0;
+  }
+  &__body .adminmethods-table__col {
+    padding-right: 16px;
+  }
+  &__body .adminmethods-table__method {
+    padding-left: 38px;
+  }
+  &__body .adminmethods-table__category {
+    color: #a9f9c4;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  .adminmethods-table__action {
+    .action {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 21px;
+        height: 22px;
+        background-color: #2f2f2f;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+  }
+}
