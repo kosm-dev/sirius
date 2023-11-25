@@ -71,7 +71,17 @@
 
     <main class="main">
 
+      <div class="section-indicator">
 
+        <span class="section-indicator__value" id="currentSection">00</span>
+
+        <div class="section-indicator__line">
+          <div class="section-indicator__drag">
+          </div>
+        </div>
+        
+        <span class="section-indicator__value" id="totalSections">00</span>
+      </div>
 
       <section class="main__hero hero" id="section1">
 
@@ -518,7 +528,7 @@
 
       </section>
 
-      <section class="main__methods methods" id="section4">
+      <section class="main__methods methods" id="section3">
         <div class="methods__inner">
           <div class="container">
             <div class="methods__title title">
@@ -615,15 +625,12 @@
         </div>
       </section>
 
-      <section class="main__plans plans">
+      <section class="main__plans plans" id="section4">
         <div class="container">
           <div class="plans__inner">
             <div class="plans__title title">
               Plans
             </div>
-
-
-
 
             <div class="plans__wrapper">
               <div class="plans-table">
@@ -787,6 +794,16 @@
 
           </div>
         </div>
+
+        <div class="support">
+          <div class="support__icon">
+            <img src="images/support-btn.svg" alt="support">
+          </div>
+          <a class="support__link" href="#">
+            Need our help?
+          </a>
+        </div>
+
       </section>
 
 

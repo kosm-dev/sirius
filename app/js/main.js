@@ -40,6 +40,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  // section-indicator
+
+  if (document.querySelector('.section-indicator')) {
+    // Получаем все секции на странице
+    const sections = document.querySelectorAll('section');
+
+    // Получаем элементы индикатора и счетчиков
+    const currentSectionElement = document.getElementById('currentSection');
+    const totalSectionsElement = document.getElementById('totalSections');
+
+    // Функция для форматирования числа в формат "01"
+    function formatNumber(number) {
+      return number < 10 ? `0${number}` : number;
+    }
+
+    // Обновляем значения счетчиков
+    function updateSectionCount() {
+      const currentSection = Array.from(sections).findIndex(section => {
+        const rect = section.getBoundingClientRect();
+        return rect.top <= 0 && rect.bottom > 0;
+      }) + 1;
+
+      const totalSections = sections.length;
+
+      currentSectionElement.textContent = formatNumber(currentSection);
+      totalSectionsElement.textContent = formatNumber(totalSections);
+    }
+
+    // Вызываем функцию обновления при загрузке страницы
+    updateSectionCount();
+
+    // Добавляем обработчик для события прокрутки
+    window.addEventListener('scroll', function () {
+      updateSectionCount();
+    });
+
+    // Добавляем обработчик для события изменения размеров окна
+    window.addEventListener('resize', function () {
+      updateSectionCount();
+    });
+  }
+
+
+
 
 
   if (document.querySelector('.userpurchase-slider')) {
@@ -94,6 +138,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // support
+
+  if (document.querySelector('.support')) {
+    function supportBtn() {
+      const supportBtn = document.querySelector('.support'),
+        supportLink = document.querySelector('.support__link');
+
+      // Обработчик события на клик
+      supportBtn.addEventListener('click', () => {
+        // Добавляем/удаляем класс активности
+        supportLink.classList.toggle('active');
+      });
+    }
+
+    // Инициализируем компонент
+    supportBtn();
+  }
+
 
   // dropdown
 
@@ -117,12 +179,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-// spoiler
+  // spoiler
   if (document.querySelector('.spoiler')) {
     function SpoilerComponent(spoilerElement) {
-      const spoilerHead = spoilerElement.querySelector('.spoiler__head');
-      const spoilerDescr = spoilerElement.querySelector('.spoiler__descr');
-      const spoilerIcon = spoilerElement.querySelector('.spoiler__icon');
+      const spoilerHead = spoilerElement.querySelector('.spoiler__head'),
+        spoilerDescr = spoilerElement.querySelector('.spoiler__descr'),
+        spoilerIcon = spoilerElement.querySelector('.spoiler__icon');
 
       spoilerHead.addEventListener('click', () => {
         spoilerDescr.classList.toggle('active');
