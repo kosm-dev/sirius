@@ -1,94 +1,69 @@
-// .sidebar {
-//   &__user-dropdown {
-//     margin-left: 33px;
-//     margin-right: 74px;
-//   }
-// }
-// .user-dropdown {
-//   &__wrapper {
-//     display: flex;
-//     position: relative;
-//   }
-//   &__content {
-//     display: flex;
-//     padding-top: 17px;
-//     padding-left: 29px;
-//     padding-right: 35px;
-//     padding-bottom: 17px;
-//   }
-
-//   &__position {
-//   }
-//   &__nickname {
-//   }
-//   &__icon {
-//     position: absolute;
-//     top: 34px;
-//     right: 29px;
-//   }
-// }
-
-// .sidebar {
-//   &__user-dropdown {
-//     margin-left: 33px;
-//     margin-right: 74px;
-//   }
-// }
-// .user-dropdown {
-//   width: 100%;
-//   max-width: 216px;
-//   border-radius: 6px;
-//   background: #2f2f2f;
-//   flex: 0 0 auto;
-//   cursor: pointer;
-//   &__head {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     padding-top: 17px;
-//     padding-left: 29px;
-//     padding-right: 35px;
-//     padding-bottom: 17px;
-//   }
-//   &__avatar {
-//     margin-right: 9px;
-//     width: 32px;
-//     height: 32px;
-//   }
-//   &__avatar img {
-//     border-radius: 50%;
-//   }
-//   &__info {
-//   }
-//   &__position {
-//     @extend %gilroy-500;
-//     font-size: 12px;
-//     color: #fff;
-//   }
-//   &__nickname {
-//     @extend %gilroy-700;
-//     font-size: 16px;
-//     color: #fff;
-//   }
-//   &__icon {
-//     position: absolute;
-//     top: 34px;
-//     right: 29px;
-//   }
-//   &__content {
-//     display: none;
-//   }
-//   &__item {
-//     display: flex;
-//     align-items: center;
-
-//     padding-top: 17px;
-//     padding-left: 29px;
-//     padding-right: 35px;
-//     padding-bottom: 17px;
-//   }
-
-//   &__head.active + .user-dropdown__content {
-//     display: block;
-//   }
-// }
+.user-dropdown {
+  width: 100%;
+  max-width: 216px;
+  border-radius: 6px;
+  background: #2f2f2f;
+  margin-left: 33px;
+  margin-right: 74px;
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 29px;
+    padding-right: 40px;
+  }
+  &__avatar {
+    margin-right: 9px;
+    width: 32px;
+    height: 32px;
+  }
+  &__avatar img {
+    border-radius: 50%;
+  }
+  &__info {
+  }
+  &__position {
+    @extend %gilroy-500;
+    font-size: 12px;
+    color: #fff;
+  }
+  &__nickname {
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(0);
+    right: 20px;
+    transition: all 0.2s;
+  }
+  &__icon.active {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+  &__content {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 18px;
+    padding-left: 29px;
+    padding-right: 29px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #2f2f2f;
+    flex-direction: column;
+    gap: 12px 0;
+    transition: all 0.2s;
+  }
+  &__content.active {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

@@ -2,12 +2,10 @@
   width: 100%;
   max-width: 1151px;
   margin-top: 90px;
-  margin-left: 107px;
   &__title {
     margin-bottom: 68px;
   }
-  &__wrapper {
-  }
+  
 }
 
 .userapi-form {
@@ -136,8 +134,6 @@
     @extend %gilroy-600;
     font-size: 16px;
     color: #fff;
-  }
-  &__body {
   }
   &__content {
     @extend %gilroy-600;

@@ -95,84 +95,48 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  // dropdown
 
 
-  // if (document.querySelector('.user-dropdown__head')) {
-  //     var userDropdownHead = document.querySelector('.user-dropdown__head');
+  if (document.querySelector('.user-dropdown')) {
+    function UserDropdownComponent() {
+      const dropdownHead = document.querySelector('.user-dropdown__head'),
+        dropdownContent = document.querySelector('.user-dropdown__content'),
+        dropdownIcon = document.querySelector('.user-dropdown__icon');
 
-  //     userDropdownHead.addEventListener('click', function () {
-  //       userDropdownHead.classList.toggle('active');
-  //     });
+      // Обработчик события на клик
+      dropdownHead.addEventListener('click', () => {
+        // Добавляем/удаляем класс активности
+        dropdownContent.classList.toggle('active');
+        dropdownIcon.classList.toggle('active');
+      });
+    }
 
-  //   }
-
-
-
-
-
-  // переписать ввиде функции
-  // пофиксить спойлер
-
-
-  // const spoilerContent = document.querySelectorAll(".spoiler__content");
-
-  // spoilerContent.forEach((item) => {
-  //   let spoilerHead = item.querySelector(".spoiler__head");
-  //   spoilerHead.addEventListener("click", () => {
-  //     item.classList.toggle("open");
-
-  //     let spoilerArrow = item.querySelector(".spoiler__icon"),
-  //       spoilerDescr = item.querySelector(".spoiler__descr");
-
-  //     spoilerArrow.classList.toggle("open");
-
-  //     if (item.classList.contains("open")) {
-  //       spoilerDescr.style.height = `${spoilerDescr.scrollHeight}px`;
-  //       spoilerDescr.classList.add('active');
-  //     } else {
-  //       spoilerDescr.style.height = "0px";
-  //       spoilerDescr.classList.remove('active');
-  //     }
-  //   });
-
-  // });
+    // Инициализируем компонент
+    UserDropdownComponent();
+  }
 
 
-  // function toggleSpoiler(item, headClass, iconClass, descrClass) {
-  //   item.classList.toggle("open");
+// spoiler
+  if (document.querySelector('.spoiler')) {
+    function SpoilerComponent(spoilerElement) {
+      const spoilerHead = spoilerElement.querySelector('.spoiler__head');
+      const spoilerDescr = spoilerElement.querySelector('.spoiler__descr');
+      const spoilerIcon = spoilerElement.querySelector('.spoiler__icon');
 
-  //   let spoilerArrow = item.querySelector(`.${iconClass}`),
-  //     spoilerDescr = item.querySelector(`.${descrClass}`);
+      spoilerHead.addEventListener('click', () => {
+        spoilerDescr.classList.toggle('active');
+        spoilerIcon.classList.toggle('active');
+      });
+    }
 
-  //   spoilerArrow.classList.toggle("open");
+    const spoilerElements = document.querySelectorAll('.spoiler');
 
-  //   if (item.classList.contains("open")) {
-  //     spoilerDescr.style.height = `${spoilerDescr.scrollHeight}px`;
-  //     spoilerDescr.classList.add("active");
-  //   } else {
-  //     spoilerDescr.style.height = "0px";
-  //     spoilerDescr.classList.remove("active");
-  //   }
-  // }
+    spoilerElements.forEach((spoilerElement) => {
+      SpoilerComponent(spoilerElement);
+    });
 
-  // function handleSpoilerClick(item, headClass, iconClass, descrClass) {
-  //   return () => {
-  //     toggleSpoiler(item, headClass, iconClass, descrClass);
-  //   };
-  // }
-
-  // const spoilerContent = document.querySelectorAll(".spoiler__content");
-
-  // spoilerContent.forEach((item) => {
-  //   let spoilerHead = item.querySelector(".spoiler__head"),
-  //     spoilerIcon = item.querySelector(".spoiler__icon"),
-  //     spoilerDescr = item.querySelector(".spoiler__descr");
-
-  //   spoilerHead.addEventListener("click", handleSpoilerClick(item, "spoiler__head", "spoiler__icon", "spoiler__descr"));
-  //   // Можете подставить свои классы вместо "spoiler__head", "spoiler__icon", "spoiler__descr"
-  // });
-
-
+  }
 
 
 });

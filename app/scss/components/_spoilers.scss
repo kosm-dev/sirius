@@ -26,15 +26,12 @@
   .spoiler {
     border-radius: 10px;
     background: #2a2a2a;
-    padding: 20px 26px;
     cursor: pointer;
-    &__content {
-      overflow: hidden;
-    }
     &__head {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 20px 26px;
     }
     &__title {
       @extend %gilroy-700;
@@ -47,15 +44,19 @@
     &__icon {
       transition: transform 0.2s;
     }
-    &__icon.open {
+    &__icon.active {
       transform: rotate(180deg);
     }
     &__descr {
-      height: 0;
-      transition: all 0.2s;
+      padding: 0 26px 20px;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
     }
     &__descr.active {
-      margin-top: 9px;
+      margin-top: 12px;
+      display: block;
+      opacity: 1;
     }
   }
 }
