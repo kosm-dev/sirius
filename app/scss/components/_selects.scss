@@ -1,6 +1,7 @@
 .userattackhub-send__item,
 .userattackhub-send__box-item,
-.select-user__box {
+.select-user__box,
+.adminserver-modal__item {
   .choices {
     margin-top: 12px;
   }
@@ -217,7 +218,7 @@
 
   .choices__list--dropdown .choices__item,
   .choices__list[aria-expanded] .choices__item {
-    padding: 18px 29px;
+    padding: 18px 23px;
     font-size: 12px;
   }
   .choices__placeholder {

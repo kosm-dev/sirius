@@ -1,0 +1,129 @@
+.adminserver {
+  margin-top: 90px;
+  margin-bottom: 199px;
+  width: 100%;
+  max-width: 1438px;
+  &__title {
+    margin-bottom: 71px;
+  }
+  &__wrapper {
+    border-radius: 16px;
+    background: #1f1e1f;
+    padding-top: 30px;
+    padding-left: 19px;
+    padding-right: 34px;
+    padding-bottom: 52px;
+  }
+  &__adds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__add {
+    padding: 19px 50px;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+    background: #2cb576;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+
+.adminserver-table {
+  margin-bottom: 76px;
+  &__head {
+    margin-bottom: 23px;
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+    border-radius: 6px;
+    background: #2f2f2f;
+  }
+  &__head .adminserver-table__col {
+    padding-right: 16px;
+  }
+  &__head .adminserver-table__slots {
+    padding-left: 15px;
+  }
+  &__head .adminserver-table__server {
+    padding-left: 28px;
+  }
+  &__server {
+    min-width: 264px;
+  }
+  &__slots {
+    min-width: 264px;
+  }
+  &__layer {
+    min-width: 264px;
+  }
+  &__status {
+    min-width: 259px;
+  }
+  &__action {
+    min-width: 178px;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 9px 0;
+  }
+  &__body .adminserver-table__col {
+    padding-right: 16px;
+  }
+  &__body .adminserver-table__server {
+    padding-left: 47px;
+  }
+  &__body .adminserver-table__status span {
+    position: relative;
+    display: inline-block;
+    color: #a9f9c4;
+    padding-left: 11px;
+  }
+  &__body .adminserver-table__status span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #a9f9c4;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  .adminserver-table__action {
+    .action {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 21px;
+        height: 22px;
+        background-color: #2f2f2f;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.adminserver-slots {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 13px;
+  border-radius: 6px;
+  background: #2f2f2f;
+  &__value {
+    @extend %gilroy-500;
+    font-size: 12px;
+    color: #a9f9c4;
+  }
+}
