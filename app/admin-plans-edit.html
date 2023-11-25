@@ -161,1014 +161,905 @@
 
             </div>
 
-            <div class="userpurchase">
+            <div class="adminplans-edit">
 
-              <div class="userpurchase__title panel-title">
+              <div class="adminplans-edit__title panel-title">
                 Plans
               </div>
 
-              <div class="userpurchase__wrapper">
-
-                <div class="swiper userpurchase-slider">
+              <div class="adminplans-edit__wrapper">
+                <!-- Slider main container -->
+                <div class="swiper editplan-slider">
+                  <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
 
+                    <!-- Slides -->
                     <div class="swiper-slide">
+                      <div class="plans-edit">
 
-                      <div class="purchase-card">
+                        <form class="plans-edit__form">
 
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Basic
+                          <div class="plans-edit__left">
+
+                            <div class="plans-edit__head">
+                              <div class="plans-edit__headtitle plans-edit__title">
+                                Basic
+                              </div>
+                              <div class="plans-edit__price">
+                                <div class="plans-edit__price-value">
+                                  $100
+                                </div>
+                                <div class="plans-edit__btn edit-btn">
+                                  <img src="images/panel/icons/edit.svg" alt="edit">
+                                </div>
+                              </div>
+
+                              <div class="plans-edit__term">
+                                <div class="plans-edit__term-value">
+                                  Monthly
+                                </div>
+                                <div class="plans-edit__btn edit-btn">
+                                  <img src="images/panel/icons/edit.svg" alt="edit">
+                                </div>
+                              </div>
+                            </div>
+
+
+
+                            <div class="plans-edit__features">
+                              <ul>
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      1 domain under protection
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="plans-edit__content plans-edit__content--special">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Support response time
+                                      up to 6 hours
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="plans-edit__content plans-edit__content--extra">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Block/Allow lists
+                                      up to 3 rules each
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="plans-edit__advantages">
+
+                              <div class="plans-edit__advantages-title plans-edit__title">
+                                Key advantages
+                              </div>
+
+                              <ul>
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      1 domain under protection
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Free SSL certificate
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="plans-edit__save">
+                              Save
+                            </div>
+
+
                           </div>
-                          <div class="purchase-card__price">
-                            $100
+
+
+
+
+                          <div class="plans-edit__right">
+
+                            <div class="plans-category">
+                              <div class="plans-category__title plans-edit__title">
+                                Category
+                              </div>
+                              <div class="plans-category__labels">
+                                <label>
+                                  Basic
+                                  <input class="plans-edit__input" type="radio" checked name="category">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                                <label>
+                                  Premium
+                                  <input class="plans-edit__input" type="radio" name="category">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                              </div>
+
+                            </div>
+
+
+
+                            <div class="plans-api">
+                              <div class="plans-api__title plans-edit__title">
+                                Api Access
+                              </div>
+                              <div class="plans-api__labels">
+                                <label>
+                                  True
+                                  <input class="plans-edit__input" type="radio" name="api">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+
+                                  </span>
+                                </label>
+                                <label>
+                                  False
+                                  <input class="plans-edit__input" type="radio" name="api" checked>
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                              </div>
+
+                            </div>
+
+
+
+                            <div class="plans-length">
+                              <div class="plans-length__headtitle plans-edit__title">
+                                Length
+                              </div>
+
+                              <div class="plans-length__selects">
+
+                                <select class="plans-length__select custom-select">
+                                  <option>Days</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                </select>
+
+
+                              </div>
+                              <div class="plans-length__item">
+                                <div class="plans-length__box">
+                                  <div class="plans-length__title">Concurrents</div>
+                                  <div class="plans-length__value">1</div>
+                                </div>
+                              </div>
+
+                              <div class="plans-length__item">
+                                <div class="plans-length__box">
+                                  <div class="plans-length__title">Time</div>
+                                  <div class="plans-length__value">300</div>
+                                </div>
+                              </div>
+
+                            </div>
+
                           </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
 
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
+                        </form>
                       </div>
-
                     </div>
 
                     <div class="swiper-slide">
+                      <div class="plans-edit">
 
-                      <div class="purchase-card">
+                        <form class="plans-edit__form">
 
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Normal
+                          <div class="plans-edit__left">
+
+                            <div class="plans-edit__head">
+                              <div class="plans-edit__headtitle plans-edit__title">
+                                Normal
+                              </div>
+                              <div class="plans-edit__price">
+                                <div class="plans-edit__price-value">
+                                  $200
+                                </div>
+                                <div class="plans-edit__btn edit-btn">
+                                  <img src="images/panel/icons/edit.svg" alt="edit">
+                                </div>
+                              </div>
+
+                              <div class="plans-edit__term">
+                                <div class="plans-edit__term-value">
+                                  Monthly
+                                </div>
+                                <div class="plans-edit__btn edit-btn">
+                                  <img src="images/panel/icons/edit.svg" alt="edit">
+                                </div>
+                              </div>
+                            </div>
+
+
+
+                            <div class="plans-edit__features">
+                              <ul>
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      1 domain under protection
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="plans-edit__content plans-edit__content--special">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Support response time
+                                      up to 6 hours
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="plans-edit__content plans-edit__content--extra">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Block/Allow lists
+                                      up to 3 rules each
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="plans-edit__advantages">
+
+                              <div class="plans-edit__advantages-title plans-edit__title">
+                                Key advantages
+                              </div>
+
+                              <ul>
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      1 domain under protection
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Free SSL certificate
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="plans-edit__save">
+                              Save
+                            </div>
+
+
                           </div>
-                          <div class="purchase-card__price">
-                            $200
+
+
+
+
+                          <div class="plans-edit__right">
+
+                            <div class="plans-category">
+                              <div class="plans-category__title plans-edit__title">
+                                Category
+                              </div>
+                              <div class="plans-category__labels">
+                                <label>
+                                  Basic
+                                  <input class="plans-edit__input" type="radio" checked name="category">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                                <label>
+                                  Premium
+                                  <input class="plans-edit__input" type="radio" name="category">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                              </div>
+
+                            </div>
+
+
+
+                            <div class="plans-api">
+                              <div class="plans-api__title plans-edit__title">
+                                Api Access
+                              </div>
+                              <div class="plans-api__labels">
+                                <label>
+                                  True
+                                  <input class="plans-edit__input" type="radio" name="api">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+
+                                  </span>
+                                </label>
+                                <label>
+                                  False
+                                  <input class="plans-edit__input" type="radio" name="api" checked>
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                              </div>
+
+                            </div>
+
+
+
+                            <div class="plans-length">
+                              <div class="plans-length__headtitle plans-edit__title">
+                                Length
+                              </div>
+
+                              <div class="plans-length__selects">
+
+                                <select class="plans-length__select custom-select">
+                                  <option>Days</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                </select>
+
+
+                              </div>
+                              <div class="plans-length__item">
+                                <div class="plans-length__box">
+                                  <div class="plans-length__title">Concurrents</div>
+                                  <div class="plans-length__value">1</div>
+                                </div>
+                              </div>
+
+                              <div class="plans-length__item">
+                                <div class="plans-length__box">
+                                  <div class="plans-length__title">Time</div>
+                                  <div class="plans-length__value">300</div>
+                                </div>
+                              </div>
+
+                            </div>
+
                           </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
 
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
+                        </form>
                       </div>
-
                     </div>
 
                     <div class="swiper-slide">
+                      <div class="plans-edit">
 
-                      <div class="purchase-card">
+                        <form class="plans-edit__form">
 
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Medium
+                          <div class="plans-edit__left">
+
+                            <div class="plans-edit__head">
+                              <div class="plans-edit__headtitle plans-edit__title">
+                                Medium
+                              </div>
+                              <div class="plans-edit__price">
+                                <div class="plans-edit__price-value">
+                                  $500
+                                </div>
+                                <div class="plans-edit__btn edit-btn">
+                                  <img src="images/panel/icons/edit.svg" alt="edit">
+                                </div>
+                              </div>
+
+                              <div class="plans-edit__term">
+                                <div class="plans-edit__term-value">
+                                  Monthly
+                                </div>
+                                <div class="plans-edit__btn edit-btn">
+                                  <img src="images/panel/icons/edit.svg" alt="edit">
+                                </div>
+                              </div>
+                            </div>
+
+
+
+                            <div class="plans-edit__features">
+                              <ul>
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      1 domain under protection
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="plans-edit__content plans-edit__content--special">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Support response time
+                                      up to 6 hours
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="plans-edit__content plans-edit__content--extra">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Block/Allow lists
+                                      up to 3 rules each
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="plans-edit__advantages">
+
+                              <div class="plans-edit__advantages-title plans-edit__title">
+                                Key advantages
+                              </div>
+
+                              <ul>
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      1 domain under protection
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Free SSL certificate
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="plans-edit__save">
+                              Save
+                            </div>
+
+
                           </div>
-                          <div class="purchase-card__price">
-                            $500
+
+
+
+
+                          <div class="plans-edit__right">
+
+                            <div class="plans-category">
+                              <div class="plans-category__title plans-edit__title">
+                                Category
+                              </div>
+                              <div class="plans-category__labels">
+                                <label>
+                                  Basic
+                                  <input class="plans-edit__input" type="radio" checked name="category">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                                <label>
+                                  Premium
+                                  <input class="plans-edit__input" type="radio" name="category">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                              </div>
+
+                            </div>
+
+
+
+                            <div class="plans-api">
+                              <div class="plans-api__title plans-edit__title">
+                                Api Access
+                              </div>
+                              <div class="plans-api__labels">
+                                <label>
+                                  True
+                                  <input class="plans-edit__input" type="radio" name="api">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+
+                                  </span>
+                                </label>
+                                <label>
+                                  False
+                                  <input class="plans-edit__input" type="radio" name="api" checked>
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                              </div>
+
+                            </div>
+
+
+
+                            <div class="plans-length">
+                              <div class="plans-length__headtitle plans-edit__title">
+                                Length
+                              </div>
+
+                              <div class="plans-length__selects">
+
+                                <select class="plans-length__select custom-select">
+                                  <option>Days</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                </select>
+
+
+                              </div>
+                              <div class="plans-length__item">
+                                <div class="plans-length__box">
+                                  <div class="plans-length__title">Concurrents</div>
+                                  <div class="plans-length__value">1</div>
+                                </div>
+                              </div>
+
+                              <div class="plans-length__item">
+                                <div class="plans-length__box">
+                                  <div class="plans-length__title">Time</div>
+                                  <div class="plans-length__value">300</div>
+                                </div>
+                              </div>
+
+                            </div>
+
                           </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
 
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
+                        </form>
                       </div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                      <div class="purchase-card">
-
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Premium
-                          </div>
-                          <div class="purchase-card__price">
-                            $1000
-                          </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
-
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
-                      </div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                      <div class="purchase-card">
-
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Enterprise
-                          </div>
-                          <div class="purchase-card__price">
-                            $2000
-                          </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
-
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
-                      </div>
-
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                      <div class="purchase-card">
-
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Basic
-                          </div>
-                          <div class="purchase-card__price">
-                            $100
-                          </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
-
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
-                      </div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                      <div class="purchase-card">
-
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Normal
-                          </div>
-                          <div class="purchase-card__price">
-                            $200
-                          </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
-
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
-                      </div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                      <div class="purchase-card">
-
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Medium
-                          </div>
-                          <div class="purchase-card__price">
-                            $500
-                          </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
-
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
-                      </div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                      <div class="purchase-card">
-
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Premium
-                          </div>
-                          <div class="purchase-card__price">
-                            $1000
-                          </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
-
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
-                      </div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                      <div class="purchase-card">
-
-                        <div class="purchase-card__head">
-                          <div class="purchase-card__title">
-                            Enterprise
-                          </div>
-                          <div class="purchase-card__price">
-                            $2000
-                          </div>
-                          <div class="purchase-card__period">
-                            Monthly
-                          </div>
-                        </div>
-
-                        <div class="purchase-card__features">
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--special">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Support response time
-                                  up to 6 hours
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="purchase-card__content purchase-card__content--extra">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Block/Allow lists
-                                  up to 3 rules each
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="purchase-card__advantages">
-
-                          <div class="purchase-card__advantages-title">
-                            Key advantages
-                          </div>
-
-                          <ul>
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  1 domain under protection
-                                </div>
-                              </div>
-                            </li>
-
-                            <li>
-                              <div class="purchase-card__content">
-                                <div class="purchase-card__icon">
-                                  <img src="images/panel/user/purchase/done.svg" alt="done">
-                                </div>
-
-                                <div class="purchase-card__text">
-                                  Free SSL certificate
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="purchase-card__btns">
-                          <a class="purchase-card__btn" href="#">
-                            Edit
-                          </a>
-                        </div>
-
-
-                      </div>
-
                     </div>
 
 
 
+                    <div class="swiper-slide">
+                      <div class="plans-edit">
+
+                        <form class="plans-edit__form">
+
+                          <div class="plans-edit__left">
+
+                            <div class="plans-edit__head">
+                              <div class="plans-edit__headtitle plans-edit__title">
+                                Premium
+                              </div>
+                              <div class="plans-edit__price">
+                                <div class="plans-edit__price-value">
+                                  $1000
+                                </div>
+                                <div class="plans-edit__btn edit-btn">
+                                  <img src="images/panel/icons/edit.svg" alt="edit">
+                                </div>
+                              </div>
+
+                              <div class="plans-edit__term">
+                                <div class="plans-edit__term-value">
+                                  Monthly
+                                </div>
+                                <div class="plans-edit__btn edit-btn">
+                                  <img src="images/panel/icons/edit.svg" alt="edit">
+                                </div>
+                              </div>
+                            </div>
+
+
+
+                            <div class="plans-edit__features">
+                              <ul>
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      1 domain under protection
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="plans-edit__content plans-edit__content--special">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Support response time
+                                      up to 6 hours
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="plans-edit__content plans-edit__content--extra">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Block/Allow lists
+                                      up to 3 rules each
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="plans-edit__advantages">
+
+                              <div class="plans-edit__advantages-title plans-edit__title">
+                                Key advantages
+                              </div>
+
+                              <ul>
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      1 domain under protection
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="plans-edit__content">
+                                    <div class="plans-edit__icon">
+                                      <img src="images/panel/admin/plans/done.svg" alt="done">
+                                    </div>
+
+                                    <div class="plans-edit__text">
+                                      Free SSL certificate
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="plans-edit__save">
+                              Save
+                            </div>
+
+
+                          </div>
+
+
+
+
+                          <div class="plans-edit__right">
+
+                            <div class="plans-category">
+                              <div class="plans-category__title plans-edit__title">
+                                Category
+                              </div>
+                              <div class="plans-category__labels">
+                                <label>
+                                  Basic
+                                  <input class="plans-edit__input" type="radio" checked name="category">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                                <label>
+                                  Premium
+                                  <input class="plans-edit__input" type="radio" name="category">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                              </div>
+
+                            </div>
+
+
+
+                            <div class="plans-api">
+                              <div class="plans-api__title plans-edit__title">
+                                Api Access
+                              </div>
+                              <div class="plans-api__labels">
+                                <label>
+                                  True
+                                  <input class="plans-edit__input" type="radio" name="api">
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+
+                                  </span>
+                                </label>
+                                <label>
+                                  False
+                                  <input class="plans-edit__input" type="radio" name="api" checked>
+                                  <span class="plans-edit__radio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                      fill="none">
+                                      <circle cx="8" cy="8" r="8" fill="#2B2B2B" />
+                                      <circle cx="8.00109" cy="7.99986" r="4.44444" fill="#242424" />
+                                    </svg>
+                                  </span>
+                                </label>
+                              </div>
+
+                            </div>
+
+
+
+                            <div class="plans-length">
+                              <div class="plans-length__headtitle plans-edit__title">
+                                Length
+                              </div>
+
+                              <div class="plans-length__selects">
+
+                                <select class="plans-length__select custom-select">
+                                  <option>Days</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                </select>
+
+
+                              </div>
+                              <div class="plans-length__item">
+                                <div class="plans-length__box">
+                                  <div class="plans-length__title">Concurrents</div>
+                                  <div class="plans-length__value">1</div>
+                                </div>
+                              </div>
+
+                              <div class="plans-length__item">
+                                <div class="plans-length__box">
+                                  <div class="plans-length__title">Time</div>
+                                  <div class="plans-length__value">300</div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </form>
+                      </div>
+                    </div>
 
                   </div>
 
-                  <div class="userpurchase-slider__arrow userpurchase-slider__arrow-right">
+
+                  <div class="editplan-slider__arrow editplan-slider__arrow-right">
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                       <path d="M1 1L7.29289 7.29289C7.68342 7.68342 7.68342 8.31658 7.29289 8.70711L1 15"
                         stroke="#A9F9C4" />
@@ -1177,9 +1068,23 @@
 
                 </div>
 
+
+
+
+
+
+
+
               </div>
 
 
+              <div class="adminplans-edit__btns">
+
+                <button class="adminplans-edit__add">
+                  Add a new plan
+                </button>
+
+              </div>
 
             </div>
 

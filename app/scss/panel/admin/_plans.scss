@@ -1,0 +1,305 @@
+.adminplans-edit {
+  margin-top: 90px;
+  margin-bottom: 126px;
+  &__title {
+    margin-left: 26px;
+    margin-bottom: 66px;
+  }
+  &__wrapper {
+    margin-bottom: 22px;
+    border-radius: 16px;
+    background: #1f1e1f;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  &__btns {
+    width: 100%;
+    max-width: 515px;
+    margin: 0 auto;
+  }
+  &__add {
+    width: 100%;
+    padding: 19px;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    background: #2cb576;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.editplan-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1358px;
+
+  padding-top: 40px;
+  padding-bottom: 36px;
+  padding-right: 20px;
+}
+
+.editplan-slider__arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 5;
+  transform: translateY(-50%);
+  padding: 14px 17px;
+  border-radius: 6px;
+  border: 1px solid #a9f9c4;
+  background: #2f2f2f;
+  cursor: pointer;
+}
+
+.plans-edit {
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 71px;
+  padding-top: 53px;
+  padding-bottom: 45px;
+  border-radius: 15px;
+  border: 1px solid #a9f9c4;
+  background-color: #1f1e1f;
+  &__form {
+    display: flex;
+  }
+  &__left {
+    margin-right: auto;
+    width: 100%;
+    max-width: 234px;
+  }
+  &__head {
+    margin-bottom: 39px;
+  }
+  &__headtitle {
+    text-align: center;
+    margin-bottom: 7px;
+  }
+  &__title {
+    @extend %gilroy-700;
+    font-size: 20px;
+    color: #fff;
+  }
+  &__price {
+    margin-bottom: 4px;
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    @extend %gilroy-500;
+    font-size: 24px;
+    color: #2cb576;
+
+    border-radius: 6px;
+    background-color: #181618;
+    .plans-edit__btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 16px;
+    }
+  }
+  &__price-value {
+    padding: 0 40px;
+  }
+
+  &__term {
+    position: relative;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    @extend %gilroy-500;
+    font-size: 20px;
+    color: #6f6f6f;
+    text-align: center;
+
+    border-radius: 6px;
+    background: #181618;
+    .plans-edit__btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 16px;
+    }
+  }
+  &__term-value {
+    padding: 0 40px;
+  }
+  &__features {
+    padding-left: 12px;
+    margin-bottom: 26px;
+  }
+  &__features ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px 0;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    padding-left: 39px;
+  }
+  &__content--special {
+    padding-right: 40px;
+  }
+  &__content--extra {
+    padding-right: 77px;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  &__text {
+    @extend %gilroy-700;
+    font-size: 12px;
+    color: #6f6f6f;
+  }
+  &__advantages {
+    padding-left: 12px;
+    margin-bottom: 73px;
+  }
+  &__advantages ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px 0;
+  }
+  &__advantages-title {
+    margin-bottom: 26px;
+    @extend %gilroy-500;
+    font-size: 20px;
+    color: #fff;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  &__save {
+    margin-left: 42px;
+    min-width: 150px;
+    min-height: 39px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    background: #2cb576;
+    border: none;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__right {
+    width: 100%;
+    max-width: 260px;
+    padding-left: 36px;
+  }
+  &__input {
+    @extend %radio-hidden;
+    &:checked {
+      & + .plans-edit__radio {
+        svg circle:last-child {
+          fill: #2cb576;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+  &__radio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    background-color: #2b2b2b;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.plans-category {
+  margin-bottom: 27px;
+  & .plans-edit__radio {
+    margin-left: auto;
+  }
+  &__title {
+    margin-bottom: 27px;
+  }
+  &__labels {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+    width: 104px;
+  }
+  &__labels label {
+    display: flex;
+    align-items: center;
+    @extend %gilroy-700;
+    font-size: 12px;
+    color: #fff;
+  }
+}
+.plans-api {
+  margin-bottom: 27px;
+  & .plans-edit__radio {
+    margin-left: auto;
+  }
+  &__title {
+    margin-bottom: 27px;
+  }
+  &__labels {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+    width: 104px;
+  }
+  &__labels label {
+    display: flex;
+    align-items: center;
+    @extend %gilroy-700;
+    font-size: 12px;
+    color: #fff;
+  }
+}
+
+.plans-length {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  &__headtitle {
+    margin-bottom: 26px;
+  }
+  &__item {
+    padding: 10px 26px;
+    border-radius: 10px;
+    background: #2a2a2a;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @extend %gilroy-700;
+    font-size: 12px;
+  }
+  &__title {
+    color: #fff;
+    padding-right: 15px;
+  }
+  &__value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 17px;
+    color: #363636;
+    border-radius: 6px;
+    background: #181618;
+  }
+}

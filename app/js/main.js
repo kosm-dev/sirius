@@ -3,14 +3,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
-
-
-
-
-  if (document.querySelector('.header') || document.querySelector('.header-special')) {
-    headerScroll('.header');
+  if (document.querySelector('.header-special')) {
     headerScroll('.header-special');
   }
+
 
 
   function headerScroll(headerClass) {
@@ -65,61 +61,50 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // if (document.querySelector('.adminplans-slider')) {
-  //   const adminPlansSlider = new Swiper('.adminplans-slider', {
-  //     loop: true,
-  //     slidesPerView: 'auto',
-  //     spaceBetween: 70,
-  //     grabCursor: 'true',
-  //     navigation: {
-  //       nextEl: '.adminplans-slider__arrow-right',
-  //     },
-  //     keyboard: {
-  //       enabled: true,
-  //       onlyInViewport: false,
-  //     },
 
-  //   });
+  if (document.querySelector('.editplan-slider')) {
+    const editPlanSlider = new Swiper('.editplan-slider', {
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: '.editplan-slider__arrow-right',
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
+      allowTouchMove: false, // запрещаем перемещение слайдов по умолчанию
 
-  // }
+    });
+
+  }
 
 
   // selects
-  if (document.querySelector('.userattackhub__select-request')) {
-    const selectRequest = new Choices('.userattackhub__select-request', {
-      searchEnabled: false,
-      allowHTML: true,
-      itemSelectText: '',
+  if (document.querySelector('.custom-select')) {
+    const customSelect = document.querySelectorAll('.custom-select');
+
+    customSelect.forEach((select) => {
+      new Choices(select, {
+        searchEnabled: false,
+        allowHTML: true,
+        itemSelectText: ''
+      });
     });
   }
 
-  if (document.querySelector('.userattackhub__select-method')) {
-    const selectMethod = new Choices('.userattackhub__select-method', {
-      searchEnabled: false,
-      allowHTML: true,
-      itemSelectText: '',
-    });
-  }
-
-  if (document.querySelector('.userattackhub__select-layer4')) {
-    const selectMethodLayer = new Choices('.userattackhub__select-layer4', {
-      searchEnabled: false,
-      allowHTML: true,
-      itemSelectText: '',
-    });
-
-  }
 
 
 
-  if (document.querySelector('.user-dropdown__head')) {
-    var userDropdownHead = document.querySelector('.user-dropdown__head');
+  // if (document.querySelector('.user-dropdown__head')) {
+  //     var userDropdownHead = document.querySelector('.user-dropdown__head');
 
-    userDropdownHead.addEventListener('click', function () {
-      userDropdownHead.classList.toggle('active');
-    });
+  //     userDropdownHead.addEventListener('click', function () {
+  //       userDropdownHead.classList.toggle('active');
+  //     });
 
-  }
+  //   }
 
 
 
