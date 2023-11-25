@@ -64,6 +64,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+
+  // if (document.querySelector('.adminplans-slider')) {
+  //   const adminPlansSlider = new Swiper('.adminplans-slider', {
+  //     loop: true,
+  //     slidesPerView: 'auto',
+  //     spaceBetween: 70,
+  //     grabCursor: 'true',
+  //     navigation: {
+  //       nextEl: '.adminplans-slider__arrow-right',
+  //     },
+  //     keyboard: {
+  //       enabled: true,
+  //       onlyInViewport: false,
+  //     },
+
+  //   });
+
+  // }
+
+
+  // selects
   if (document.querySelector('.userattackhub__select-request')) {
     const selectRequest = new Choices('.userattackhub__select-request', {
       searchEnabled: false,
