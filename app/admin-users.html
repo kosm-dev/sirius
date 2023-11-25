@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Stresser</title>
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <main class="main">
+
+      <div class="content">
+        <div class="container-fluid">
+
+
+          <div class="content__inner">
+
+            <div class="sidebar">
+
+              <a class="sidebar__logo logo-panel" href="#">
+                <img src="images/panel/logo-panel.svg" alt="logo panel">
+              </a>
+
+              <nav class="sidebar__menu sidebar-menu">
+                <ul class="sidebar-menu__list">
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/dashboard.svg" alt="">
+                      </div>
+                      Home
+                    </a>
+
+                  </li>
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/attack.svg" alt="">
+                      </div>
+                      Plans
+                    </a>
+
+                  </li>
+
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link sidebar-menu__link--active" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/users.svg" alt="">
+                      </div>
+                      Users
+                    </a>
+
+                  </li>
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/server.svg" alt="">
+                      </div>
+                      Servers
+                    </a>
+
+                  </li>
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/api.svg" alt="">
+                      </div>
+                      Methods
+                    </a>
+
+                  </li>
+
+                  <li class="sidebar-menu__item">
+
+                    <a class="sidebar-menu__link" href="#">
+                      <div class="sidebar-menu__icon">
+                        <img src="images/panel/siderbar/settings.svg" alt="">
+                      </div>
+                      Settings
+                    </a>
+
+                  </li>
+
+
+
+
+                </ul>
+              </nav>
+
+
+
+
+
+              <!-- <div class="sidebar__user-dropdown user-dropdown">
+
+
+                <div class="user-dropdown__head">
+
+
+
+                  <div class="user-dropdown__avatar">
+                    <img src="images/panel/siderbar/user.png" alt="">
+                  </div>
+
+                  <div class="user-dropdown__info">
+                    <div class="user-dropdown__position">User</div>
+                    <div class="user-dropdown__nickname">Gatto</div>
+                  </div>
+
+                  <div class="user-dropdown__icon">
+                    <img src="images/panel/siderbar/arrow-down.svg" alt="arrow">
+                  </div>
+
+                </div>
+
+
+                <div class="user-dropdown__content">
+                  <div class="user-dropdown__item">
+                    <div class="user-dropdown__avatar">
+                      <img src="images/panel/siderbar/user.png" alt="">
+                    </div>
+
+                    <div class="user-dropdown__info">
+                      <div class="user-dropdown__position">User</div>
+                      <div class="user-dropdown__nickname">Gatto</div>
+                    </div>
+                  </div>
+                  <div class="user-dropdown__item">
+                    <div class="user-dropdown__avatar">
+                      <img src="images/panel/siderbar/user.png" alt="">
+                    </div>
+
+                    <div class="user-dropdown__info">
+                      <div class="user-dropdown__position">User</div>
+                      <div class="user-dropdown__nickname">Gatto</div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div> -->
+
+            </div>
+
+            <div class="adminusers">
+
+              <div class="adminusers__title panel-title">
+                Users
+              </div>
+
+              <div class="adminusers__wrapper">
+
+                <div class="user-names">
+
+                  <div class="user-names__title adminusers-title">
+                    Usernames
+                  </div>
+
+                  <div class="user-names__table">
+                    <div class="user-names__table-head">
+                      <div class="user-names__table-col user-names__table-id">ID</div>
+                      <div class="user-names__table-col user-names__table-username">Username</div>
+                      <div class="user-names__table-col user-names__table-plan">Plan</div>
+                      <div class="user-names__table-col user-names__table-status">Status</div>
+                      <div class="user-names__table-col user-names__table-action">Action</div>
+                    </div>
+
+                    <div class="user-names__table-body">
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">1</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">2</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">3</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">4</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">5</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">6</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">7</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">8</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">9</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+                      <div class="user-names__table-row">
+                        <div class="user-names__table-col user-names__table-id">10</div>
+                        <div class="user-names__table-col user-names__table-username">username</div>
+                        <div class="user-names__table-col user-names__table-plan">Starter</div>
+                        <div class="user-names__table-col user-names__table-status">Active</div>
+                        <div class="user-names__table-col user-names__table-action">
+                          <button class="ban">Ban</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+                <div class="adminuser-info">
+
+                  <div class="adminuser-info__title adminusers-title">
+                    User Infromation
+                  </div>
+
+                  <div class="adminuser-info__table">
+                    <div class="adminuser-info__table-head">
+                      <div class="adminuser-info__table-col adminuser-info__table-target">Target</div>
+                      <div class="adminuser-info__table-col adminuser-info__table-method">Method</div>
+                      <div class="adminuser-info__table-col adminuser-info__table-timeleft">Time left</div>
+
+                    </div>
+
+
+                    <div class="adminuser-info__table-body">
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+                      <div class="adminuser-info__table-row">
+                        <div class="adminuser-info__table-col adminuser-info__table-target">192.0.0.1</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-method">NTP</div>
+                        <div class="adminuser-info__table-col adminuser-info__table-timeleft">
+                          98
+                          <button class="timeleft-btn">Stop</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="adminuser-info__table-footer">
+                      <button class="stop-all">
+                        Stop All
+                      </button>
+
+
+                      <div class="pagination">
+
+                        <ul class="pagination__list">
+                          <li class="pagination__item">
+                            <a class="pagination__link pagination__link--active" href="#">
+                              1
+                            </a>
+                          </li>
+                          <li class="pagination__item">
+                            <a class="pagination__link" href="#">
+                              2
+                            </a>
+                          </li>
+                          <li class="pagination__item">
+                            <a class="pagination__link" href="#">
+                              3
+                            </a>
+                          </li>
+                          <li class="pagination__item">
+                            <a class="pagination__link" href="#">
+                              4
+                            </a>
+                          </li>
+
+                        </ul>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <div class="users-changepass">
+
+                  <div class="users-changepass__title adminusers-title">
+                    Change Password
+                  </div>
+
+                  <form class="users-changepass__form">
+
+                    <div class="users-changepass__items">
+
+                      <div class="users-changepass__item">
+                        <input class="users-changepass__input" type="password" placeholder="New Password">
+                      </div>
+
+                      <div class="users-changepass__item">
+                        <input class="users-changepass__input" type="password" placeholder="Repeat Password">
+                      </div>
+
+                      <div class="users-changepass__selects">
+                        <select class="users-changepass__select custom-select">
+                          <option value="">Select method</option>
+                          <option value="">GET</option>
+                          <option value="">POST</option>
+                        </select>
+
+                        <select class="users-changepass__select custom-select">
+                          <option value="">Active</option>
+                          <option value="">GET</option>
+                          <option value="">POST</option>
+                        </select>
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                  <div class="users-invoices">
+                    <div class="users-invoices__title">
+                      User Invoices
+                    </div>
+                    <div class="users-invoices__items">
+
+                      <div class="users-invoices__item">
+                        I have troubles with my brain
+                      </div>
+                      <div class="users-invoices__item users-invoices__item--special">
+                        I have troubles with my L7 methods
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+  </div>
+
+  </main>
+
+
+
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

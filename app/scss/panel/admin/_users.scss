@@ -1,0 +1,256 @@
+.adminusers {
+  margin-top: 90px;
+  margin-bottom: 199px;
+  width: 100%;
+  max-width: 1438px;
+  &__title {
+    margin-bottom: 71px;
+  }
+  &__wrapper {
+    display: flex;
+    padding-top: 44px;
+    padding-bottom: 63px;
+    padding-left: 23px;
+    padding-right: 52px;
+    border-radius: 16px;
+    background: #1f1e1f;
+  }
+}
+
+.user-names {
+  width: 100%;
+  max-width: 451px;
+  margin-right: 55px;
+  &__title {
+    margin-bottom: 47px;
+  }
+  &__table-head {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 6px;
+    background: #2f2f2f;
+  }
+  &__table-head .user-names__table-col {
+    padding-right: 15px;
+  }
+  &__table-head .user-names__table-id {
+    padding-left: 9px;
+  }
+
+  &__table-head .user-names__table-action {
+    padding-right: 26px;
+  }
+
+  &__table-row {
+    display: flex;
+    align-items: center;
+    text-align: start;
+  }
+  &__table-col {
+    text-align: start;
+    @extend %gilroy-500;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__table-id {
+    min-width: 59px;
+  }
+  &__table-username {
+    min-width: 135px;
+    overflow-x: hidden;
+  }
+  &__table-plan {
+    min-width: 101px;
+  }
+  &__table-status {
+    min-width: 82px;
+  }
+  &__table-action {
+    min-width: 73px;
+  }
+  &__table-body {
+    display: flex;
+    flex-direction: column;
+    gap: 3px 0;
+  }
+
+  &__table-body .user-names__table-col {
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+  }
+  &__table-body .user-names__table-id {
+    padding-left: 14px;
+  }
+
+  &__table-body .user-names__table-status {
+    color: #a9f9c4;
+  }
+}
+.adminusers-title {
+  @extend %gilroy-700;
+  font-size: 20px;
+  color: #fff;
+}
+.ban {
+  padding: 2px 17px;
+  @extend %gilroy-500;
+  font-size: 12px;
+  color: #fff;
+
+  border-radius: 6px;
+  background: #2f2f2f;
+  border: none;
+  cursor: pointer;
+}
+.adminuser-info {
+  width: 100%;
+  max-width: 407px;
+  margin-right: 20px;
+  &__title {
+    margin-bottom: 37px;
+    margin-left: 47px;
+  }
+  &__table {
+    padding-left: 44px;
+
+    border-left: 2px solid #2f2f2f;
+  }
+  &__table-head {
+    margin-bottom: 42px;
+    display: flex;
+    align-items: center;
+  }
+  &__table-head .adminuser-info__table-target {
+    padding-left: 5px;
+  }
+  &__table-row {
+    display: flex;
+    align-items: center;
+  }
+  &__table-col {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+  }
+  &__table-target {
+    min-width: 89px;
+  }
+  &__table-method {
+    min-width: 106px;
+  }
+  &__table-timeleft {
+    min-width: 166px;
+  }
+  &__table-body {
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+  }
+  &__table-body .adminuser-info__table-method {
+    padding-left: 23px;
+  }
+  &__table-body .adminuser-info__table-timeleft {
+    padding-left: 20px;
+  }
+  &__table-footer {
+    padding-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__table-footer .stop-all {
+    margin-right: 36px;
+  }
+
+  .adminuser-info__table-timeleft .timeleft-btn {
+    margin-left: 53px;
+  }
+}
+
+.users-changepass {
+  width: 100%;
+  max-width: 379px;
+  margin-left: auto;
+  &__title {
+    margin-bottom: 98px;
+  }
+  &__form {
+    margin-bottom: 29px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+  }
+  &__input {
+    padding: 18px 23px 22px;
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    background: #181618;
+    border: none;
+
+    @extend %gilroy-500;
+    font-size: 12px;
+    color: #575757;
+  }
+  &__selects {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+  }
+}
+
+.users-invoices {
+  border-radius: 6px;
+  background: #181618;
+  padding-top: 16px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 24px;
+  &__title {
+    margin-bottom: 11px;
+    @extend %gilroy-700;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0;
+  }
+  &__item {
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 19px;
+    padding-right: 45px;
+    width: 100%;
+    max-width: 224px;
+    border-radius: 6px;
+    background: #252525;
+    @extend %gilroy-700;
+    font-size: 10px;
+    color: #fff;
+  }
+  &__item:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #a9f9c4;
+  }
+  &__item--special:after {
+    background-color: #f7f9a9;
+  }
+}
