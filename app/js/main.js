@@ -42,6 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // section-indicator
 
+
+
+
+
   if (document.querySelector('.section-indicator')) {
     // Получаем все секции на странице
     const sections = document.querySelectorAll('section');
@@ -80,6 +84,25 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('resize', function () {
       updateSectionCount();
     });
+
+
+
+
+
+
+    function handleScroll() {
+      var indicator = document.querySelector('.section-indicator');
+      var scrollPosition = window.scrollY;
+
+      if (scrollPosition >= 100) {
+        indicator.classList.add('active');
+      } else {
+        indicator.classList.remove('active');
+      }
+    }
+
+    // Добавляем обработчик событий при скролле
+    window.addEventListener('scroll', handleScroll);
   }
 
 

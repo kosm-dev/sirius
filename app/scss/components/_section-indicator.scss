@@ -1,15 +1,14 @@
 .section-indicator {
+  display: none;
   width: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: sticky;
-  top: 694px;
+  position: fixed;
+  top: 700px;
   left: 82px;
   z-index: 996;
-  padding-bottom: 143px;
-  margin-top: -25%;
-  transform: translateY(-80px);
+  transition: all .2s;
   &__value {
     @extend %gilroy-500;
     font-size: 12px;
@@ -33,3 +32,11 @@
     background-color: #fff;
   }
 }
+
+@media(max-width: 1920px) {
+.section-indicator.active {
+  transform: translateY(-300px);
+}
+}
+
+

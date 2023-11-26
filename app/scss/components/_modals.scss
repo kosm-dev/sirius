@@ -32,6 +32,10 @@
     z-index: 999;
     cursor: pointer;
   }
+  &.active {
+    display: block;
+    top: 0;
+  }
 }
 .purchase-check {
   padding-top: 42px;
@@ -170,11 +174,12 @@
   &__text {
     font-size: 12px;
   }
+   &.active {
+    top: 0;
+  }
 }
 
-.modal-success.modal-success--active {
-  top: 0;
-}
+
 
 .modal-error {
   position: absolute;
@@ -219,14 +224,11 @@
   &__text {
     font-size: 12px;
   }
+  &.active {
+    top: 0;
+  }
 }
 
-.modal-success.modal-success--active {
-  top: 0;
-}
-.modal-error.modal-error--active {
-  top: 0;
-}
 
 .adminserver-modal {
   display: none;
@@ -303,6 +305,10 @@
     background: #2cb576;
     border: none;
     cursor: pointer;
+  }
+  &.active {
+    display: block;
+    top: 0;
   }
 }
 
@@ -381,5 +387,9 @@
     background: #2cb576;
     border: none;
     cursor: pointer;
+  }
+  &.active {
+    display: block;
+    top: 0;
   }
 }
