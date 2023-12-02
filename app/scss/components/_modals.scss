@@ -141,12 +141,17 @@
   z-index: 1000;
   width: 100%;
   max-width: 289px;
-  display: flex;
-  align-items: center;
-  border-radius: 6px;
-  background: #2f2f2f;
-  padding: 13px 23px;
+  display: none;
+  flex-direction: column;
+  gap: 20px 0;
   transition: all 0.2s;
+  &__item {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: #2f2f2f;
+    padding: 13px 23px;
+  }
   &__icon {
     margin-right: 12px;
   }
@@ -174,12 +179,11 @@
   &__text {
     font-size: 12px;
   }
-   &.active {
+  &.active {
     top: 0;
+    display: flex;
   }
 }
-
-
 
 .modal-error {
   position: absolute;
@@ -190,13 +194,17 @@
   z-index: 1000;
   width: 100%;
   max-width: 289px;
-  display: flex;
-  align-items: center;
-  border-radius: 6px;
-  background: #2f2f2f;
-  padding: 13px 23px;
+  display: none;
+  flex-direction: column;
+  gap: 20px 0;
   transition: all 0.2s;
-
+  &__item {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: #2f2f2f;
+    padding: 13px 23px;
+  }
   &__icon {
     margin-right: 12px;
   }
@@ -207,10 +215,11 @@
     @extend %gilroy-600;
     color: #fff;
   }
+
   &__content:after {
     content: "";
     position: absolute;
-    top: -18px;
+    top: -13px;
     left: 50%;
     transform: translateX(-50%);
     width: 69px;
@@ -226,9 +235,9 @@
   }
   &.active {
     top: 0;
+    display: flex;
   }
 }
-
 
 .adminserver-modal {
   display: none;
